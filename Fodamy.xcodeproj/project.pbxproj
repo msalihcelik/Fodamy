@@ -16,6 +16,9 @@
 		67A047BE27D713E2007359A9 /* FodamyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047BD27D713E2007359A9 /* FodamyTests.swift */; };
 		67A047C827D713E2007359A9 /* FodamyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047C727D713E2007359A9 /* FodamyUITests.swift */; };
 		67A047CA27D713E2007359A9 /* FodamyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047C927D713E2007359A9 /* FodamyUITestsLaunchTests.swift */; };
+		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
+		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
+		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07BAA15A1DA2E01D72FC1D1C /* Pods-Fodamy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy.release.xcconfig"; path = "Target Support Files/Pods-Fodamy/Pods-Fodamy.release.xcconfig"; sourceTree = "<group>"; };
+		11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FodamyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047A327D713E1007359A9 /* Fodamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047A627D713E1007359A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A047A827D713E1007359A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		67A047C327D713E2007359A9 /* FodamyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FodamyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047C727D713E2007359A9 /* FodamyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITests.swift; sourceTree = "<group>"; };
 		67A047C927D713E2007359A9 /* FodamyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E19014A40637D22E47A335F9 /* Pods-Fodamy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy/Pods-Fodamy.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D27561BB4A28C1FE61E9681 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */,
+				45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */,
+				1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DE8C7DFC0DFE9D9C6FCB0F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E19014A40637D22E47A335F9 /* Pods-Fodamy.debug.xcconfig */,
+				07BAA15A1DA2E01D72FC1D1C /* Pods-Fodamy.release.xcconfig */,
+				B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */,
+				A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */,
+				6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */,
+				11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		67A0479A27D713E1007359A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				67A047BC27D713E2007359A9 /* FodamyTests */,
 				67A047C627D713E2007359A9 /* FodamyUITests */,
 				67A047A427D713E1007359A9 /* Products */,
+				5DE8C7DFC0DFE9D9C6FCB0F7 /* Pods */,
+				3D27561BB4A28C1FE61E9681 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A047CD27D713E2007359A9 /* Build configuration list for PBXNativeTarget "Fodamy" */;
 			buildPhases = (
+				7DBC815400C8D98880F3C182 /* [CP] Check Pods Manifest.lock */,
 				67A0479F27D713E1007359A9 /* Sources */,
 				67A047A027D713E1007359A9 /* Frameworks */,
 				67A047A127D713E1007359A9 /* Resources */,
+				67A047D627D71641007359A9 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A047D027D713E2007359A9 /* Build configuration list for PBXNativeTarget "FodamyTests" */;
 			buildPhases = (
+				BB53AA0F9C40166B8D5CFD07 /* [CP] Check Pods Manifest.lock */,
 				67A047B527D713E2007359A9 /* Sources */,
 				67A047B627D713E2007359A9 /* Frameworks */,
 				67A047B727D713E2007359A9 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A047D327D713E2007359A9 /* Build configuration list for PBXNativeTarget "FodamyUITests" */;
 			buildPhases = (
+				D4D0DA025EAF90BE6D4F2089 /* [CP] Check Pods Manifest.lock */,
 				67A047BF27D713E2007359A9 /* Sources */,
 				67A047C027D713E2007359A9 /* Frameworks */,
 				67A047C127D713E2007359A9 /* Resources */,
@@ -252,6 +296,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67A047D627D71641007359A9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		7DBC815400C8D98880F3C182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fodamy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB53AA0F9C40166B8D5CFD07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FodamyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D0DA025EAF90BE6D4F2089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fodamy-FodamyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67A0479F27D713E1007359A9 /* Sources */ = {
@@ -353,6 +484,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,6 +546,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -422,9 +555,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -434,6 +568,7 @@
 		};
 		67A047CE27D713E2007359A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19014A40637D22E47A335F9 /* Pods-Fodamy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +597,7 @@
 		};
 		67A047CF27D713E2007359A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BAA15A1DA2E01D72FC1D1C /* Pods-Fodamy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +626,7 @@
 		};
 		67A047D127D713E2007359A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +647,7 @@
 		};
 		67A047D227D713E2007359A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +668,7 @@
 		};
 		67A047D427D713E2007359A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +687,7 @@
 		};
 		67A047D527D713E2007359A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
