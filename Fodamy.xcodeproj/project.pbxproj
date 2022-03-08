@@ -20,6 +20,13 @@
 		67A0484927D718D6007359A9 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484727D718D6007359A9 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		67A0484B27D718DA007359A9 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484A27D718DA007359A9 /* Utilities.framework */; };
 		67A0484C27D718DA007359A9 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484A27D718DA007359A9 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67A0485927D719DC007359A9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0484F27D719DC007359A9 /* AppRouter.swift */; };
+		67A0485A27D719DC007359A9 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485127D719DC007359A9 /* Animator.swift */; };
+		67A0485B27D719DC007359A9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485227D719DC007359A9 /* Router.swift */; };
+		67A0485C27D719DC007359A9 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485427D719DC007359A9 /* ModalTransition.swift */; };
+		67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485527D719DC007359A9 /* PlaceOnWindowTransition.swift */; };
+		67A0485E27D719DC007359A9 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485627D719DC007359A9 /* Transition.swift */; };
+		67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485727D719DC007359A9 /* PushTransition.swift */; };
 		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
 		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
 		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
@@ -77,6 +84,14 @@
 		67A0484327D718D2007359A9 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0484727D718D6007359A9 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0484A27D718DA007359A9 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0484F27D719DC007359A9 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		67A0485127D719DC007359A9 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		67A0485227D719DC007359A9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		67A0485427D719DC007359A9 /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		67A0485527D719DC007359A9 /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		67A0485627D719DC007359A9 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		67A0485727D719DC007359A9 /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		67A0486427D71AA9007359A9 /* Fodamy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fodamy-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,11 +181,12 @@
 		67A047A527D713E1007359A9 /* Fodamy */ = {
 			isa = PBXGroup;
 			children = (
-				67A047A627D713E1007359A9 /* AppDelegate.swift */,
+				67A0486127D71A70007359A9 /* Configurations */,
+				67A0486027D71A02007359A9 /* AppDelegate */,
+				67A0484D27D719DC007359A9 /* Routing */,
 				67A047AA27D713E1007359A9 /* ViewController.swift */,
 				67A047AF27D713E2007359A9 /* Assets.xcassets */,
 				67A047B127D713E2007359A9 /* LaunchScreen.storyboard */,
-				67A047B427D713E2007359A9 /* Info.plist */,
 			);
 			path = Fodamy;
 			sourceTree = "<group>";
@@ -190,6 +206,85 @@
 				67A047C927D713E2007359A9 /* FodamyUITestsLaunchTests.swift */,
 			);
 			path = FodamyUITests;
+			sourceTree = "<group>";
+		};
+		67A0484D27D719DC007359A9 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				67A0484E27D719DC007359A9 /* Routers */,
+				67A0485027D719DC007359A9 /* Core */,
+				67A0485327D719DC007359A9 /* Transitions */,
+				67A0485827D719DC007359A9 /* Routes */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		67A0484E27D719DC007359A9 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				67A0484F27D719DC007359A9 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		67A0485027D719DC007359A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67A0485127D719DC007359A9 /* Animator.swift */,
+				67A0485227D719DC007359A9 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		67A0485327D719DC007359A9 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				67A0485427D719DC007359A9 /* ModalTransition.swift */,
+				67A0485527D719DC007359A9 /* PlaceOnWindowTransition.swift */,
+				67A0485627D719DC007359A9 /* Transition.swift */,
+				67A0485727D719DC007359A9 /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		67A0485827D719DC007359A9 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		67A0486027D71A02007359A9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				67A047A627D713E1007359A9 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		67A0486127D71A70007359A9 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				67A0486227D71A76007359A9 /* BridgingHeader */,
+				67A0486327D71A7F007359A9 /* Release */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		67A0486227D71A76007359A9 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				67A0486427D71AA9007359A9 /* Fodamy-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		67A0486327D71A7F007359A9 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				67A047B427D713E2007359A9 /* Info.plist */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +362,7 @@
 				TargetAttributes = {
 					67A047A227D713E1007359A9 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					67A047B827D713E2007359A9 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -450,8 +546,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0485C27D719DC007359A9 /* ModalTransition.swift in Sources */,
+				67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */,
+				67A0485A27D719DC007359A9 /* Animator.swift in Sources */,
 				67A047AB27D713E1007359A9 /* ViewController.swift in Sources */,
+				67A0485B27D719DC007359A9 /* Router.swift in Sources */,
 				67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */,
+				67A0485E27D719DC007359A9 /* Transition.swift in Sources */,
+				67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */,
+				67A0485927D719DC007359A9 /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,11 +727,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Fodamy/Info.plist;
+				INFOPLIST_FILE = Fodamy/Configurations/Release/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -642,6 +746,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcelik.Fodamy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Fodamy/Configurations/BridgingHeader/Fodamy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,11 +759,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Fodamy/Info.plist;
+				INFOPLIST_FILE = Fodamy/Configurations/Release/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -671,6 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsalihcelik.Fodamy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Fodamy/Configurations/BridgingHeader/Fodamy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
