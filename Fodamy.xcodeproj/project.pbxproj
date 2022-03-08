@@ -205,6 +205,7 @@
 				67A047A127D713E1007359A9 /* Resources */,
 				67A047D627D71641007359A9 /* Run SwiftLint */,
 				67A0484627D718D2007359A9 /* Embed Frameworks */,
+				6CF2DB35BDF8AE85080E817C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +243,7 @@
 				67A047BF27D713E2007359A9 /* Sources */,
 				67A047C027D713E2007359A9 /* Frameworks */,
 				67A047C127D713E2007359A9 /* Resources */,
+				59FC2ABF528A91B7ED27992D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +325,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		59FC2ABF528A91B7ED27992D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		67A047D627D71641007359A9 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +359,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		6CF2DB35BDF8AE85080E817C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		7DBC815400C8D98880F3C182 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
