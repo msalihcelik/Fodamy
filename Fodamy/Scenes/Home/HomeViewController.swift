@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 7.03.2022.
 //
 
-import UIKit
-
 final class HomeViewController: BaseViewController<HomeViewModel> {
     
     override func viewDidLoad() {

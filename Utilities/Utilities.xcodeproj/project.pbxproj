@@ -12,6 +12,7 @@
 		67A0483427D71878007359A9 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0482927D71878007359A9 /* Utilities.framework */; };
 		67A0483927D71878007359A9 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0483827D71878007359A9 /* UtilitiesTests.swift */; };
 		67A0483A27D71878007359A9 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A0482C27D71878007359A9 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A0489B27D725CB007359A9 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489A27D725CB007359A9 /* Closures.swift */; };
 		FC42A428826A0E624B207EEC /* Pods_UtilitiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3AFF019AEE81B53CDD4BC7 /* Pods_UtilitiesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		67A0482D27D71878007359A9 /* Utilities.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utilities.docc; sourceTree = "<group>"; };
 		67A0483327D71878007359A9 /* UtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0483827D71878007359A9 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
+		67A0489A27D725CB007359A9 /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		969C9098156854E6DBBCC2CF /* Pods-UtilitiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilitiesTests.release.xcconfig"; path = "Target Support Files/Pods-UtilitiesTests/Pods-UtilitiesTests.release.xcconfig"; sourceTree = "<group>"; };
 		978692EF3F1B3FE9BF235C0A /* Pods-Utilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utilities.debug.xcconfig"; path = "Target Support Files/Pods-Utilities/Pods-Utilities.debug.xcconfig"; sourceTree = "<group>"; };
 		CD22864EBAF126F7B776F5CE /* Pods-Utilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utilities.release.xcconfig"; path = "Target Support Files/Pods-Utilities/Pods-Utilities.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		67A0482B27D71878007359A9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				67A0489827D725CB007359A9 /* Constants */,
 				67A0482C27D71878007359A9 /* Utilities.h */,
 				67A0482D27D71878007359A9 /* Utilities.docc */,
 			);
@@ -107,6 +110,22 @@
 				67A0483827D71878007359A9 /* UtilitiesTests.swift */,
 			);
 			path = UtilitiesTests;
+			sourceTree = "<group>";
+		};
+		67A0489827D725CB007359A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				67A0489927D725CB007359A9 /* Closures */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		67A0489927D725CB007359A9 /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				67A0489A27D725CB007359A9 /* Closures.swift */,
+			);
+			path = Closures;
 			sourceTree = "<group>";
 		};
 		EB72C010121084C618635DA5 /* Frameworks */ = {
@@ -277,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A0482E27D71878007359A9 /* Utilities.docc in Sources */,
+				67A0489B27D725CB007359A9 /* Closures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AE78360B21E1CC1E17A3ECF /* Pods-UtilitiesTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;
@@ -503,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 969C9098156854E6DBBCC2CF /* Pods-UtilitiesTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;

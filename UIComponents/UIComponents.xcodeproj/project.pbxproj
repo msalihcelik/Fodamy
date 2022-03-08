@@ -12,6 +12,20 @@
 		67A0481027D717FA007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0480527D717FA007359A9 /* UIComponents.framework */; };
 		67A0481527D717FA007359A9 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0481427D717FA007359A9 /* UIComponentsTests.swift */; };
 		67A0481627D717FA007359A9 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A0480827D717FA007359A9 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A0487927D72044007359A9 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 67A0487827D72044007359A9 /* swiftgen.yml */; };
+		67A0488527D72228007359A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A0487E27D72228007359A9 /* Images.xcassets */; };
+		67A0488627D72228007359A9 /* UIImage+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0487F27D72228007359A9 /* UIImage+Icons.swift */; };
+		67A0488727D72228007359A9 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A0488027D72228007359A9 /* Icons.xcassets */; };
+		67A0488827D72228007359A9 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0488127D72228007359A9 /* Assets.swift */; };
+		67A0488927D72228007359A9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A0488227D72228007359A9 /* Colors.xcassets */; };
+		67A0488A27D72228007359A9 /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0488327D72228007359A9 /* UIImage+Images.swift */; };
+		67A0488B27D72228007359A9 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0488427D72228007359A9 /* UIColor+Colors.swift */; };
+		67A0489027D7224D007359A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0488C27D7224D007359A9 /* Fonts.swift */; };
+		67A0489127D7224D007359A9 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0488D27D7224D007359A9 /* UIFont+Extensions.swift */; };
+		67A0489227D7224D007359A9 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A0488E27D7224D007359A9 /* Nunito-SemiBold.ttf */; };
+		67A0489327D7224D007359A9 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */; };
+		67A0489527D72360007359A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A0489427D72360007359A9 /* Localizable.strings */; };
+		67A0489727D72375007359A9 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489627D72375007359A9 /* StringConstants.swift */; };
 		DE7B79E9A7537607DC308D06 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DC9D020801C6CDDF222072 /* Pods_UIComponents.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +50,20 @@
 		67A0480927D717FA007359A9 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
 		67A0480F27D717FA007359A9 /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0481427D717FA007359A9 /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTests.swift; sourceTree = "<group>"; };
+		67A0487827D72044007359A9 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		67A0487E27D72228007359A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		67A0487F27D72228007359A9 /* UIImage+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Icons.swift"; sourceTree = "<group>"; };
+		67A0488027D72228007359A9 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		67A0488127D72228007359A9 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		67A0488227D72228007359A9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		67A0488327D72228007359A9 /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
+		67A0488427D72228007359A9 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		67A0488C27D7224D007359A9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		67A0488D27D7224D007359A9 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		67A0488E27D7224D007359A9 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		67A0489427D72360007359A9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		67A0489627D72375007359A9 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		B8B3914E663AD727096E770F /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +112,7 @@
 		67A047FB27D717FA007359A9 = {
 			isa = PBXGroup;
 			children = (
+				67A0487827D72044007359A9 /* swiftgen.yml */,
 				67A0480727D717FA007359A9 /* UIComponents */,
 				67A0481327D717FA007359A9 /* UIComponentsTests */,
 				67A0480627D717FA007359A9 /* Products */,
@@ -104,6 +133,7 @@
 		67A0480727D717FA007359A9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				67A0487A27D7204C007359A9 /* Resources */,
 				67A0480827D717FA007359A9 /* UIComponents.h */,
 				67A0480927D717FA007359A9 /* UIComponents.docc */,
 			);
@@ -116,6 +146,50 @@
 				67A0481427D717FA007359A9 /* UIComponentsTests.swift */,
 			);
 			path = UIComponentsTests;
+			sourceTree = "<group>";
+		};
+		67A0487A27D7204C007359A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67A0487D27D72062007359A9 /* Fonts */,
+				67A0487C27D7205B007359A9 /* Strings */,
+				67A0487B27D72054007359A9 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67A0487B27D72054007359A9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				67A0488127D72228007359A9 /* Assets.swift */,
+				67A0488227D72228007359A9 /* Colors.xcassets */,
+				67A0488027D72228007359A9 /* Icons.xcassets */,
+				67A0487E27D72228007359A9 /* Images.xcassets */,
+				67A0488427D72228007359A9 /* UIColor+Colors.swift */,
+				67A0487F27D72228007359A9 /* UIImage+Icons.swift */,
+				67A0488327D72228007359A9 /* UIImage+Images.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		67A0487C27D7205B007359A9 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				67A0489627D72375007359A9 /* StringConstants.swift */,
+				67A0489427D72360007359A9 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		67A0487D27D72062007359A9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				67A0488C27D7224D007359A9 /* Fonts.swift */,
+				67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */,
+				67A0488E27D7224D007359A9 /* Nunito-SemiBold.ttf */,
+				67A0488D27D7224D007359A9 /* UIFont+Extensions.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +211,7 @@
 			buildConfigurationList = 67A0481927D717FA007359A9 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
 				B407A427EDD2188FE9E97EA8 /* [CP] Check Pods Manifest.lock */,
+				67A0487527D71FAF007359A9 /* Run SwiftLint */,
 				67A0480027D717FA007359A9 /* Headers */,
 				67A0480127D717FA007359A9 /* Sources */,
 				67A0480227D717FA007359A9 /* Frameworks */,
@@ -212,6 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0487927D72044007359A9 /* swiftgen.yml in Resources */,
+				67A0488927D72228007359A9 /* Colors.xcassets in Resources */,
+				67A0488727D72228007359A9 /* Icons.xcassets in Resources */,
+				67A0489527D72360007359A9 /* Localizable.strings in Resources */,
+				67A0488527D72228007359A9 /* Images.xcassets in Resources */,
+				67A0489327D7224D007359A9 /* Nunito-Bold.ttf in Resources */,
+				67A0489227D7224D007359A9 /* Nunito-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +307,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		67A0487527D71FAF007359A9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		B407A427EDD2188FE9E97EA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,7 +376,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0488627D72228007359A9 /* UIImage+Icons.swift in Sources */,
+				67A0488A27D72228007359A9 /* UIImage+Images.swift in Sources */,
+				67A0488B27D72228007359A9 /* UIColor+Colors.swift in Sources */,
 				67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */,
+				67A0489727D72375007359A9 /* StringConstants.swift in Sources */,
+				67A0489027D7224D007359A9 /* Fonts.swift in Sources */,
+				67A0488827D72228007359A9 /* Assets.swift in Sources */,
+				67A0489127D7224D007359A9 /* UIFont+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15180225E7CE21CFB9D7900B /* Pods-UIComponentsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;
@@ -503,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52290B6F82F5CAA541DEC62C /* Pods-UIComponentsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;

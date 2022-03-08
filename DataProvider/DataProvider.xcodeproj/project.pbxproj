@@ -11,6 +11,15 @@
 		67A047EC27D717AB007359A9 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A047E127D717AB007359A9 /* DataProvider.framework */; };
 		67A047F127D717AB007359A9 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047F027D717AB007359A9 /* DataProviderTests.swift */; };
 		67A047F227D717AB007359A9 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A047E427D717AB007359A9 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A048A727D72749007359A9 /* DecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489D27D72749007359A9 /* DecodableResponseRequest.swift */; };
+		67A048A827D72749007359A9 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489E27D72749007359A9 /* Typealias.swift */; };
+		67A048A927D72749007359A9 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489F27D72749007359A9 /* RequestProtocol.swift */; };
+		67A048AA27D72749007359A9 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A027D72749007359A9 /* RequestMethod.swift */; };
+		67A048AB27D72749007359A9 /* RequestEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A127D72749007359A9 /* RequestEncoding.swift */; };
+		67A048AC27D72749007359A9 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A227D72749007359A9 /* DataProviderProtocol.swift */; };
+		67A048AD27D72749007359A9 /* ApiDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A427D72749007359A9 /* ApiDataProvider.swift */; };
+		67A048AE27D72749007359A9 /* ApiRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A527D72749007359A9 /* ApiRequestAdapter.swift */; };
+		67A048AF27D72749007359A9 /* ApiDecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A048A627D72749007359A9 /* ApiDecodableResponseRequest.swift */; };
 		BAC51CF64170FC3C189D2E07 /* Pods_DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1389B436106B58E9F913606 /* Pods_DataProvider.framework */; };
 		CDB957A0A49E4F61DEF08B03 /* Pods_DataProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936A30E601D1160C8B835AA6 /* Pods_DataProviderTests.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +42,15 @@
 		67A047E527D717AB007359A9 /* DataProvider.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataProvider.docc; sourceTree = "<group>"; };
 		67A047EB27D717AB007359A9 /* DataProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047F027D717AB007359A9 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		67A0489D27D72749007359A9 /* DecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableResponseRequest.swift; sourceTree = "<group>"; };
+		67A0489E27D72749007359A9 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		67A0489F27D72749007359A9 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		67A048A027D72749007359A9 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		67A048A127D72749007359A9 /* RequestEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncoding.swift; sourceTree = "<group>"; };
+		67A048A227D72749007359A9 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		67A048A427D72749007359A9 /* ApiDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDataProvider.swift; sourceTree = "<group>"; };
+		67A048A527D72749007359A9 /* ApiRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestAdapter.swift; sourceTree = "<group>"; };
+		67A048A627D72749007359A9 /* ApiDecodableResponseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDecodableResponseRequest.swift; sourceTree = "<group>"; };
 		936A30E601D1160C8B835AA6 /* Pods_DataProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2363021F70F5F089FD4591 /* Pods-DataProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.release.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.release.xcconfig"; sourceTree = "<group>"; };
 		D1389B436106B58E9F913606 /* Pods_DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +101,8 @@
 		67A047E327D717AB007359A9 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				67A0489C27D72749007359A9 /* Core */,
+				67A048A327D72749007359A9 /* Manager */,
 				67A047E427D717AB007359A9 /* DataProvider.h */,
 				67A047E527D717AB007359A9 /* DataProvider.docc */,
 			);
@@ -95,6 +115,29 @@
 				67A047F027D717AB007359A9 /* DataProviderTests.swift */,
 			);
 			path = DataProviderTests;
+			sourceTree = "<group>";
+		};
+		67A0489C27D72749007359A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67A0489D27D72749007359A9 /* DecodableResponseRequest.swift */,
+				67A0489E27D72749007359A9 /* Typealias.swift */,
+				67A0489F27D72749007359A9 /* RequestProtocol.swift */,
+				67A048A027D72749007359A9 /* RequestMethod.swift */,
+				67A048A127D72749007359A9 /* RequestEncoding.swift */,
+				67A048A227D72749007359A9 /* DataProviderProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		67A048A327D72749007359A9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				67A048A427D72749007359A9 /* ApiDataProvider.swift */,
+				67A048A527D72749007359A9 /* ApiRequestAdapter.swift */,
+				67A048A627D72749007359A9 /* ApiDecodableResponseRequest.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		71A711B0FC82CA99E92B2639 /* Pods */ = {
@@ -276,7 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A048A727D72749007359A9 /* DecodableResponseRequest.swift in Sources */,
+				67A048AF27D72749007359A9 /* ApiDecodableResponseRequest.swift in Sources */,
+				67A048A827D72749007359A9 /* Typealias.swift in Sources */,
+				67A048AB27D72749007359A9 /* RequestEncoding.swift in Sources */,
+				67A048AC27D72749007359A9 /* DataProviderProtocol.swift in Sources */,
 				67A047E627D717AB007359A9 /* DataProvider.docc in Sources */,
+				67A048AA27D72749007359A9 /* RequestMethod.swift in Sources */,
+				67A048A927D72749007359A9 /* RequestProtocol.swift in Sources */,
+				67A048AD27D72749007359A9 /* ApiDataProvider.swift in Sources */,
+				67A048AE27D72749007359A9 /* ApiRequestAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27EE6CB5C2BB335FA991E76A /* Pods-DataProviderTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;
@@ -503,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBC50FCB27F7074A1160E401 /* Pods-DataProviderTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNK334U5U9;

@@ -5,7 +5,7 @@
 //  Created by Mehmet Salih ÇELİK on 8.03.2022.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for UIComponents.
 FOUNDATION_EXPORT double UIComponentsVersionNumber;
