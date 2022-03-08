@@ -12,6 +12,7 @@
 		67A0481027D717FA007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0480527D717FA007359A9 /* UIComponents.framework */; };
 		67A0481527D717FA007359A9 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0481427D717FA007359A9 /* UIComponentsTests.swift */; };
 		67A0481627D717FA007359A9 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A0480827D717FA007359A9 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A0487927D72044007359A9 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 67A0487827D72044007359A9 /* swiftgen.yml */; };
 		DE7B79E9A7537607DC308D06 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DC9D020801C6CDDF222072 /* Pods_UIComponents.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		67A0480927D717FA007359A9 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
 		67A0480F27D717FA007359A9 /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0481427D717FA007359A9 /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTests.swift; sourceTree = "<group>"; };
+		67A0487827D72044007359A9 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		B8B3914E663AD727096E770F /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 		67A047FB27D717FA007359A9 = {
 			isa = PBXGroup;
 			children = (
+				67A0487827D72044007359A9 /* swiftgen.yml */,
 				67A0480727D717FA007359A9 /* UIComponents */,
 				67A0481327D717FA007359A9 /* UIComponentsTests */,
 				67A0480627D717FA007359A9 /* Products */,
@@ -104,6 +107,7 @@
 		67A0480727D717FA007359A9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				67A0487A27D7204C007359A9 /* Resources */,
 				67A0480827D717FA007359A9 /* UIComponents.h */,
 				67A0480927D717FA007359A9 /* UIComponents.docc */,
 			);
@@ -116,6 +120,37 @@
 				67A0481427D717FA007359A9 /* UIComponentsTests.swift */,
 			);
 			path = UIComponentsTests;
+			sourceTree = "<group>";
+		};
+		67A0487A27D7204C007359A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67A0487D27D72062007359A9 /* Fonts */,
+				67A0487C27D7205B007359A9 /* Strings */,
+				67A0487B27D72054007359A9 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67A0487B27D72054007359A9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		67A0487C27D7205B007359A9 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		67A0487D27D72062007359A9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildConfigurationList = 67A0481927D717FA007359A9 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
 				B407A427EDD2188FE9E97EA8 /* [CP] Check Pods Manifest.lock */,
+				67A0487527D71FAF007359A9 /* Run SwiftLint */,
 				67A0480027D717FA007359A9 /* Headers */,
 				67A0480127D717FA007359A9 /* Sources */,
 				67A0480227D717FA007359A9 /* Frameworks */,
@@ -212,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0487927D72044007359A9 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +262,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		67A0487527D71FAF007359A9 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		B407A427EDD2188FE9E97EA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

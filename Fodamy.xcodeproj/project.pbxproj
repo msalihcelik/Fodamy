@@ -334,10 +334,10 @@
 			buildConfigurationList = 67A047CD27D713E2007359A9 /* Build configuration list for PBXNativeTarget "Fodamy" */;
 			buildPhases = (
 				7DBC815400C8D98880F3C182 /* [CP] Check Pods Manifest.lock */,
+				67A047D627D71641007359A9 /* Run SwiftLint */,
 				67A0479F27D713E1007359A9 /* Sources */,
 				67A047A027D713E1007359A9 /* Frameworks */,
 				67A047A127D713E1007359A9 /* Resources */,
-				67A047D627D71641007359A9 /* Run SwiftLint */,
 				67A0484627D718D2007359A9 /* Embed Frameworks */,
 				6CF2DB35BDF8AE85080E817C /* [CP] Embed Pods Frameworks */,
 			);
