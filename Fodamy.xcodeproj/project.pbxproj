@@ -14,6 +14,12 @@
 		67A047BE27D713E2007359A9 /* FodamyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047BD27D713E2007359A9 /* FodamyTests.swift */; };
 		67A047C827D713E2007359A9 /* FodamyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047C727D713E2007359A9 /* FodamyUITests.swift */; };
 		67A047CA27D713E2007359A9 /* FodamyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047C927D713E2007359A9 /* FodamyUITestsLaunchTests.swift */; };
+		67A0484427D718D2007359A9 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484327D718D2007359A9 /* DataProvider.framework */; };
+		67A0484527D718D2007359A9 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484327D718D2007359A9 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67A0484827D718D6007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484727D718D6007359A9 /* UIComponents.framework */; };
+		67A0484927D718D6007359A9 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484727D718D6007359A9 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67A0484B27D718DA007359A9 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484A27D718DA007359A9 /* Utilities.framework */; };
+		67A0484C27D718DA007359A9 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0484A27D718DA007359A9 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
 		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
 		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
@@ -36,6 +42,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		67A0484627D718D2007359A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67A0484927D718D6007359A9 /* UIComponents.framework in Embed Frameworks */,
+				67A0484C27D718DA007359A9 /* Utilities.framework in Embed Frameworks */,
+				67A0484527D718D2007359A9 /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07BAA15A1DA2E01D72FC1D1C /* Pods-Fodamy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy.release.xcconfig"; path = "Target Support Files/Pods-Fodamy/Pods-Fodamy.release.xcconfig"; sourceTree = "<group>"; };
 		11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +74,9 @@
 		67A047C327D713E2007359A9 /* FodamyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FodamyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047C727D713E2007359A9 /* FodamyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITests.swift; sourceTree = "<group>"; };
 		67A047C927D713E2007359A9 /* FodamyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67A0484327D718D2007359A9 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0484727D718D6007359A9 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0484A27D718DA007359A9 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +90,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */,
+				67A0484827D718D6007359A9 /* UIComponents.framework in Frameworks */,
+				67A0484427D718D2007359A9 /* DataProvider.framework in Frameworks */,
+				67A0484B27D718DA007359A9 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +118,9 @@
 		3D27561BB4A28C1FE61E9681 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67A0484A27D718DA007359A9 /* Utilities.framework */,
+				67A0484727D718D6007359A9 /* UIComponents.framework */,
+				67A0484327D718D2007359A9 /* DataProvider.framework */,
 				E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */,
 				45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */,
 				1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */,
@@ -173,6 +204,7 @@
 				67A047A027D713E1007359A9 /* Frameworks */,
 				67A047A127D713E1007359A9 /* Resources */,
 				67A047D627D71641007359A9 /* Run SwiftLint */,
+				67A0484627D718D2007359A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
