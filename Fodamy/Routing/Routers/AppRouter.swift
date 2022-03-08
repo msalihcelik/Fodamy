@@ -5,8 +5,9 @@
 //  Created by Mehmet Salih ÇELİK on 7.03.2022.
 //
 
-final class AppRouter: Router {
+final class AppRouter: Router, AppRouter.Routes {
     
+    typealias Routes = HomeRoute
     weak var window: UIWindow?
     
     static let shared = AppRouter()
@@ -23,6 +24,6 @@ final class AppRouter: Router {
     }
     
     func startApp() {
-        
+        AppRouter.shared.pushHome()
     }
 }

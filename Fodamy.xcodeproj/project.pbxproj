@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047A627D713E1007359A9 /* AppDelegate.swift */; };
-		67A047AB27D713E1007359A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047AA27D713E1007359A9 /* ViewController.swift */; };
 		67A047B027D713E2007359A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A047AF27D713E2007359A9 /* Assets.xcassets */; };
 		67A047B327D713E2007359A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A047B127D713E2007359A9 /* LaunchScreen.storyboard */; };
 		67A047BE27D713E2007359A9 /* FodamyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047BD27D713E2007359A9 /* FodamyTests.swift */; };
@@ -27,6 +26,12 @@
 		67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485527D719DC007359A9 /* PlaceOnWindowTransition.swift */; };
 		67A0485E27D719DC007359A9 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485627D719DC007359A9 /* Transition.swift */; };
 		67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0485727D719DC007359A9 /* PushTransition.swift */; };
+		67A0486F27D71C5D007359A9 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486827D71C5D007359A9 /* HomeRoute.swift */; };
+		67A0487027D71C5D007359A9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486927D71C5D007359A9 /* HomeViewModel.swift */; };
+		67A0487127D71C5D007359A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486A27D71C5D007359A9 /* HomeViewController.swift */; };
+		67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486B27D71C5D007359A9 /* HomeRouter.swift */; };
+		67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486D27D71C5D007359A9 /* BaseViewController.swift */; };
+		67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486E27D71C5D007359A9 /* BaseViewModel.swift */; };
 		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
 		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
 		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
@@ -72,7 +77,6 @@
 		45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047A327D713E1007359A9 /* Fodamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047A627D713E1007359A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67A047AA27D713E1007359A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67A047AF27D713E2007359A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A047B227D713E2007359A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67A047B427D713E2007359A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +96,12 @@
 		67A0485627D719DC007359A9 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		67A0485727D719DC007359A9 /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
 		67A0486427D71AA9007359A9 /* Fodamy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fodamy-Bridging-Header.h"; sourceTree = "<group>"; };
+		67A0486827D71C5D007359A9 /* HomeRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		67A0486927D71C5D007359A9 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		67A0486A27D71C5D007359A9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		67A0486B27D71C5D007359A9 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		67A0486D27D71C5D007359A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		67A0486E27D71C5D007359A9 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,7 +194,7 @@
 				67A0486127D71A70007359A9 /* Configurations */,
 				67A0486027D71A02007359A9 /* AppDelegate */,
 				67A0484D27D719DC007359A9 /* Routing */,
-				67A047AA27D713E1007359A9 /* ViewController.swift */,
+				67A0486627D71C5D007359A9 /* Scenes */,
 				67A047AF27D713E2007359A9 /* Assets.xcassets */,
 				67A047B127D713E2007359A9 /* LaunchScreen.storyboard */,
 			);
@@ -211,10 +221,10 @@
 		67A0484D27D719DC007359A9 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				67A0485827D719DC007359A9 /* Routes */,
 				67A0484E27D719DC007359A9 /* Routers */,
 				67A0485027D719DC007359A9 /* Core */,
 				67A0485327D719DC007359A9 /* Transitions */,
-				67A0485827D719DC007359A9 /* Routes */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -285,6 +295,35 @@
 				67A047B427D713E2007359A9 /* Info.plist */,
 			);
 			path = Release;
+			sourceTree = "<group>";
+		};
+		67A0486627D71C5D007359A9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				67A0486727D71C5D007359A9 /* Home */,
+				67A0486C27D71C5D007359A9 /* Base */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		67A0486727D71C5D007359A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67A0486827D71C5D007359A9 /* HomeRoute.swift */,
+				67A0486927D71C5D007359A9 /* HomeViewModel.swift */,
+				67A0486A27D71C5D007359A9 /* HomeViewController.swift */,
+				67A0486B27D71C5D007359A9 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67A0486C27D71C5D007359A9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				67A0486D27D71C5D007359A9 /* BaseViewController.swift */,
+				67A0486E27D71C5D007359A9 /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,15 +585,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0486F27D71C5D007359A9 /* HomeRoute.swift in Sources */,
+				67A0487027D71C5D007359A9 /* HomeViewModel.swift in Sources */,
 				67A0485C27D719DC007359A9 /* ModalTransition.swift in Sources */,
 				67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */,
 				67A0485A27D719DC007359A9 /* Animator.swift in Sources */,
-				67A047AB27D713E1007359A9 /* ViewController.swift in Sources */,
+				67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */,
+				67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */,
 				67A0485B27D719DC007359A9 /* Router.swift in Sources */,
 				67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */,
 				67A0485E27D719DC007359A9 /* Transition.swift in Sources */,
+				67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */,
 				67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */,
 				67A0485927D719DC007359A9 /* AppRouter.swift in Sources */,
+				67A0487127D71C5D007359A9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
