@@ -5,8 +5,6 @@
 //  Created by Nikita Ermolenko on 28/10/2017.
 //
 
-import UIKit
-
 class PushTransition: NSObject {
     
     var animator: Animator?

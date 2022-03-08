@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 8.03.2022.
 //
 
-import Alamofire
-
 struct ApiRequestAdapter {
     
     let method: HTTPMethod

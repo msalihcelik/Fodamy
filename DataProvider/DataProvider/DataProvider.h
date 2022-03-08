@@ -5,7 +5,7 @@
 //  Created by Mehmet Salih ÇELİK on 8.03.2022.
 //
 
-#import <Foundation/Foundation.h>
+#import <Alamofire/Alamofire-umbrella.h>
 
 //! Project version number for DataProvider.
 FOUNDATION_EXPORT double DataProviderVersionNumber;

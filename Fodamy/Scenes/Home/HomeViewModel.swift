@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 7.03.2022.
 //
 
-import Foundation
-
 protocol HomeViewDataSource {}
 
 protocol HomeViewEventSource {}

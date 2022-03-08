@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 7.03.2022.
 //
 
-import UIKit
-
 public extension UIFont {
     
     enum FontWeight {

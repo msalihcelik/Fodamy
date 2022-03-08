@@ -5,8 +5,6 @@
 //  Created by Nikita Ermolenko on 28/10/2017.
 //
 
-import UIKit
-
 class ModalTransition: NSObject {
 
     var animator: Animator?
