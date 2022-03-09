@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		677BE9AA27D8A0890071F9AB /* WalkThroughRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9A727D8A0890071F9AB /* WalkThroughRouter.swift */; };
+		677BE9AB27D8A0890071F9AB /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9A827D8A0890071F9AB /* WalkThroughViewController.swift */; };
+		677BE9AC27D8A0890071F9AB /* WalkThroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9A927D8A0890071F9AB /* WalkThroughViewModel.swift */; };
+		677BE9AE27D8A2340071F9AB /* WalkThroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9AD27D8A2340071F9AB /* WalkThroughRoute.swift */; };
 		67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A047A627D713E1007359A9 /* AppDelegate.swift */; };
 		67A047B027D713E2007359A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A047AF27D713E2007359A9 /* Assets.xcassets */; };
 		67A047B327D713E2007359A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A047B127D713E2007359A9 /* LaunchScreen.storyboard */; };
@@ -75,6 +79,10 @@
 		11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FodamyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		677BE9A727D8A0890071F9AB /* WalkThroughRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughRouter.swift; sourceTree = "<group>"; };
+		677BE9A827D8A0890071F9AB /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		677BE9A927D8A0890071F9AB /* WalkThroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewModel.swift; sourceTree = "<group>"; };
+		677BE9AD27D8A2340071F9AB /* WalkThroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughRoute.swift; sourceTree = "<group>"; };
 		67A047A327D713E1007359A9 /* Fodamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A047A627D713E1007359A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A047AF27D713E2007359A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +172,17 @@
 				11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		677BE99227D8940E0071F9AB /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9A727D8A0890071F9AB /* WalkThroughRouter.swift */,
+				677BE9A827D8A0890071F9AB /* WalkThroughViewController.swift */,
+				677BE9A927D8A0890071F9AB /* WalkThroughViewModel.swift */,
+				677BE9AD27D8A2340071F9AB /* WalkThroughRoute.swift */,
+			);
+			path = WalkThrough;
 			sourceTree = "<group>";
 		};
 		67A0479A27D713E1007359A9 = {
@@ -300,8 +319,9 @@
 		67A0486627D71C5D007359A9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				67A0486727D71C5D007359A9 /* Home */,
 				67A0486C27D71C5D007359A9 /* Base */,
+				67A0486727D71C5D007359A9 /* Home */,
+				677BE99227D8940E0071F9AB /* WalkThrough */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -586,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A0486F27D71C5D007359A9 /* HomeRoute.swift in Sources */,
+				677BE9AA27D8A0890071F9AB /* WalkThroughRouter.swift in Sources */,
 				67A0487027D71C5D007359A9 /* HomeViewModel.swift in Sources */,
 				67A0485C27D719DC007359A9 /* ModalTransition.swift in Sources */,
 				67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */,
@@ -593,11 +614,14 @@
 				67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */,
 				67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */,
 				67A0485B27D719DC007359A9 /* Router.swift in Sources */,
+				677BE9AB27D8A0890071F9AB /* WalkThroughViewController.swift in Sources */,
+				677BE9AC27D8A0890071F9AB /* WalkThroughViewModel.swift in Sources */,
 				67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */,
 				67A0485E27D719DC007359A9 /* Transition.swift in Sources */,
 				67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */,
 				67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */,
 				67A0485927D719DC007359A9 /* AppRouter.swift in Sources */,
+				677BE9AE27D8A2340071F9AB /* WalkThroughRoute.swift in Sources */,
 				67A0487127D71C5D007359A9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
