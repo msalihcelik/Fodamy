@@ -25,9 +25,9 @@ final class AppRouter: Router, AppRouter.Routes {
     
     func startApp() {
         if DefaultsKey.isWalkThroughCompleted.value == true {
-            AppRouter.shared.pushHome()
+            AppRouter.shared.placeOnWindowHome()
         } else {
-            AppRouter.shared.presentWalkThrough()
+            AppRouter.shared.placeOnWindowWalkThrough()
         }
     }
 }

@@ -52,14 +52,12 @@ extension WalkThroughViewController {
         view.addSubview(pageControl)
         pageControl.topToBottom(of: collectionView)
         pageControl.centerXToSuperview()
-        pageControl.addTarget(self, action: #selector(pageControlValueChanged), for: .touchUpInside)
     }
     
     private func addNextButton() {
         view.addSubview(nextButton)
         nextButton.edgesToSuperview(excluding: .top, insets: .left(15) + .right(15), usingSafeArea: true)
         nextButton.topToBottom(of: pageControl, offset: 20)
-        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
     
     private func addCloseButton() {
@@ -67,7 +65,6 @@ extension WalkThroughViewController {
         closeButton.edgesToSuperview(excluding: [.left, .bottom], insets: .top(25) + .right(20), usingSafeArea: true)
         closeButton.width(18)
         closeButton.height(18)
-        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -75,11 +72,14 @@ extension WalkThroughViewController {
 extension WalkThroughViewController {
     
     private func configureContents() {
+        collectionView.dataSource = self
+        collectionView.delegate = self
         pageControl.numberOfPages = viewModel.numberOfItems
         pageControl.currentPageIndicatorTintColor = .appRed
         pageControl.pageIndicatorTintColor = .appRed.withAlphaComponent(0.3)
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        pageControl.addTarget(self, action: #selector(pageControlValueChanged), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
     }
     
     private func setLocalize() {
@@ -124,9 +124,9 @@ extension WalkThroughViewController {
         pageControl.currentPage = Int(offSet + horizontalCenter) / Int(width)
         
         if pageControl.currentPage == viewModel.numberOfItems - 1 {
-            nextButton.setTitle(L10n.WalkThrough.next, for: .normal)
-        } else {
             nextButton.setTitle(L10n.WalkThrough.start, for: .normal)
+        } else {
+            nextButton.setTitle(L10n.WalkThrough.next, for: .normal)
         }
     }
 }
@@ -168,78 +168,3 @@ extension WalkThroughViewController: UICollectionViewDelegateFlowLayout {
     
 }
 // swiftlint:enable line_length
-
-public class ButtonFactory {
-    
-    public enum Style {
-        case large
-        case medium
-        case small
-        
-        var height: CGFloat {
-            switch self {
-            case .large: return 60
-            case .medium: return 50
-            case .small: return 40
-            }
-        }
-        
-        var fontSize: UIFont.FontSize {
-            switch self {
-            case .large: return .xLarge
-            case .medium: return .medium
-            case .small: return .medium
-            }
-        }
-    }
-    
-    public static func createPrimaryButton(style: Style) -> UIButton {
-        let button = UIButtonBuilder()
-            .titleFont(.font(.nunitoBold, size: style.fontSize))
-            .titleColor(.appWhite)
-            .backgroundColor(.appRed)
-            .cornerRadius(4)
-            .build()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.heightAnchor.constraint(equalToConstant: style.height).isActive = true
-        button.layer.masksToBounds = true
-        button.clipsToBounds = true
-        return button
-    }
-    
-    public static func createPrimaryBorderedButton(style: Style) -> UIButton {
-        let button = UIButtonBuilder()
-            .titleFont(.font(.nunitoBold, size: style.fontSize))
-            .titleColor(.appRed)
-            .backgroundColor(.appWhite)
-            .cornerRadius(4)
-            .borderWidth(2)
-            .borderColor(UIColor.appRed.cgColor)
-            .build()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.heightAnchor.constraint(equalToConstant: style.height).isActive = true
-        button.layer.masksToBounds = true
-        button.clipsToBounds = true
-        return button
-    }
-    
-}
-
-public class PageControl: UIPageControl {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configureContents()
-    }
-    
-    // swiftlint:disable fatal_error unavailable_function
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    // swiftlint:enable fatal_error unavailable_function
-    
-    private func configureContents() {
-        pageIndicatorTintColor = UIColor.appRed.withAlphaComponent(0.3)
-        currentPageIndicatorTintColor = .appRed
-    }
-}

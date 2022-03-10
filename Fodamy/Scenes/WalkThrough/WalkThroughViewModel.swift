@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 9.03.2022.
 //
 
-import Foundation
-
 protocol WalkThroughViewDataSource {
     var numberOfItems: Int { get }
     
@@ -50,6 +48,6 @@ extension WalkThroughViewModel {
     
     func didFinishWalkThroughScene() {
         DefaultsKey.isWalkThroughCompleted.value = true
-        router.pushHome()
+        router.placeOnWindowHome()
     }
 }

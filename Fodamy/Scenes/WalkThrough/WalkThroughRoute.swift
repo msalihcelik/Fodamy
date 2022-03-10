@@ -6,12 +6,12 @@
 //
 
 protocol WalkThroughRoute {
-    func presentWalkThrough()
+    func placeOnWindowWalkThrough()
 }
 
 extension WalkThroughRoute where Self: RouterProtocol {
     
-    func presentWalkThrough() {
+    func placeOnWindowWalkThrough() {
         let router = WalkThroughRouter()
         let viewModel = WalkThroughViewModel(router: router)
         let viewController = WalkThroughViewController(viewModel: viewModel)
