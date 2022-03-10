@@ -21,13 +21,13 @@ public class WalkThroughCell: UICollectionViewCell, ReusableView {
         .font(.font(.nunitoBold, size: .xxLarge))
         .textAlignment(.center)
         .textColor(.appCinder)
-        .numberOfLines(2)
+        .numberOfLines(0)
         .build()
     private let descriptionLabel = UILabelBuilder()
         .font(.font(.nunitoSemiBold, size: .xLarge))
         .textAlignment(.center)
         .textColor(.appRaven)
-        .numberOfLines(2)
+        .numberOfLines(0)
         .build()
     
     override init(frame: CGRect) {

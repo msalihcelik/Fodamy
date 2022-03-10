@@ -5,7 +5,7 @@
 //  Created by Mehmet Salih ÇELİK on 10.03.2022.
 //
 
-public class CustomRedButton: UIButton {
+public class AppButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,7 +28,7 @@ public class CustomRedButton: UIButton {
 }
 
 // MARK: - Configure
-extension CustomRedButton {
+extension AppButton {
     
     private func configureContents() {
         backgroundColor = .appRed

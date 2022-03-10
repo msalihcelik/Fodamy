@@ -12,7 +12,7 @@
 		677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B227D8B58E0071F9AB /* WalkThroughCellModel.swift */; };
 		677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B627D8C3C10071F9AB /* ReusableView.swift */; };
 		677BE9BA27D8CB1C0071F9AB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */; };
-		677BE9C027D9600D0071F9AB /* CustomRedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9BF27D9600D0071F9AB /* CustomRedButton.swift */; };
+		677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9BF27D9600D0071F9AB /* AppButton.swift */; };
 		67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = 67A0480927D717FA007359A9 /* UIComponents.docc */; };
 		67A0481027D717FA007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0480527D717FA007359A9 /* UIComponents.framework */; };
 		67A0481527D717FA007359A9 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0481427D717FA007359A9 /* UIComponentsTests.swift */; };
@@ -54,7 +54,7 @@
 		677BE9B227D8B58E0071F9AB /* WalkThroughCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCellModel.swift; sourceTree = "<group>"; };
 		677BE9B627D8C3C10071F9AB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		677BE9BF27D9600D0071F9AB /* CustomRedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRedButton.swift; sourceTree = "<group>"; };
+		677BE9BF27D9600D0071F9AB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		67A0480527D717FA007359A9 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0480827D717FA007359A9 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		67A0480927D717FA007359A9 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		677BE9BE27D95FF80071F9AB /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				677BE9BF27D9600D0071F9AB /* CustomRedButton.swift */,
+				677BE9BF27D9600D0071F9AB /* AppButton.swift */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -436,7 +436,7 @@
 				677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */,
 				67A0488B27D72228007359A9 /* UIColor+Colors.swift in Sources */,
 				677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */,
-				677BE9C027D9600D0071F9AB /* CustomRedButton.swift in Sources */,
+				677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */,
 				67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */,
 				677BE9B327D8B58E0071F9AB /* WalkThroughCell.swift in Sources */,
 				67A0489727D72375007359A9 /* StringConstants.swift in Sources */,

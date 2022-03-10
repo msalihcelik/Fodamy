@@ -23,7 +23,7 @@ final class WalkThroughViewController: BaseViewController<WalkThroughViewModel> 
     }()
     private let pageControl = UIPageControlBuilder()
         .build()
-    private let nextButton = CustomRedButton()
+    private let nextButton = AppButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
