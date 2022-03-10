@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MobilliumUserDefaults/MobilliumUserDefaults-umbrella.h>
 
 //! Project version number for Utilities.
 FOUNDATION_EXPORT double UtilitiesVersionNumber;

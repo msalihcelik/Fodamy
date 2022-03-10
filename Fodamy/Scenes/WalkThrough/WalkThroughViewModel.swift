@@ -8,7 +8,8 @@
 import Foundation
 
 protocol WalkThroughViewDataSource {
-    func numberOfItemsAt(section: Int) -> Int
+    var numberOfItems: Int { get }
+    
     func cellItemAt(indexPath: IndexPath) -> WalkThroughCellProtocol
 }
 
@@ -18,7 +19,7 @@ protocol WalkThroughViewProtocol: WalkThroughViewDataSource, WalkThroughViewEven
 
 final class WalkThroughViewModel: BaseViewModel<WalkThroughRouter>, WalkThroughViewProtocol {
     
-    func numberOfItemsAt(section: Int) -> Int {
+    var numberOfItems: Int {
         return cellItems.count
     }
     
@@ -26,6 +27,29 @@ final class WalkThroughViewModel: BaseViewModel<WalkThroughRouter>, WalkThroughV
         return cellItems[indexPath.row]
     }
     
-    private let cellItems: [WalkThroughCellProtocol] = []
+    private let cellItems: [WalkThroughCellProtocol] = [WalkThroughCellModel(image: .imgWalkthrough1,
+                                                                             titleText:
+                                                                                L10n.WalkThrough.firstTitle,
+                                                                             descriptionText: L10n.WalkThrough.descriptionText),
+                                                        WalkThroughCellModel(image: .imgWalkthrough2,
+                                                                             titleText:
+                                                                                L10n.WalkThrough.secondTitle,
+                                                                             descriptionText: L10n.WalkThrough.descriptionText),
+                                                        WalkThroughCellModel(image: .imgWalkthrough3,
+                                                                             titleText:
+                                                                                L10n.WalkThrough.thirdTitle,
+                                                                             descriptionText: L10n.WalkThrough.descriptionText),
+                                                        WalkThroughCellModel(image: .imgWalkthrough4,
+                                                                             titleText:
+                                                                                L10n.WalkThrough.lastTitle,
+                                                                             descriptionText: L10n.WalkThrough.descriptionText)]
+}
+
+// MARK: - Actions
+extension WalkThroughViewModel {
     
+    func didFinishWalkThroughScene() {
+        DefaultsKey.isWalkThroughCompleted.value = true
+        router.pushHome()
+    }
 }
