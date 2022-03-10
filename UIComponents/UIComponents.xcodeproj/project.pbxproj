@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		43AFEEF86F463F87DBE39C2A /* Pods_UIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072944FE2015860D892F1083 /* Pods_UIComponentsTests.framework */; };
+		677BE9B327D8B58E0071F9AB /* WalkThroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B127D8B58E0071F9AB /* WalkThroughCell.swift */; };
+		677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B227D8B58E0071F9AB /* WalkThroughCellModel.swift */; };
+		677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B627D8C3C10071F9AB /* ReusableView.swift */; };
+		677BE9BA27D8CB1C0071F9AB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */; };
+		677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9BF27D9600D0071F9AB /* AppButton.swift */; };
 		67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = 67A0480927D717FA007359A9 /* UIComponents.docc */; };
 		67A0481027D717FA007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0480527D717FA007359A9 /* UIComponents.framework */; };
 		67A0481527D717FA007359A9 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0481427D717FA007359A9 /* UIComponentsTests.swift */; };
@@ -45,6 +50,11 @@
 		072944FE2015860D892F1083 /* Pods_UIComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15180225E7CE21CFB9D7900B /* Pods-UIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsTests/Pods-UIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52290B6F82F5CAA541DEC62C /* Pods-UIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsTests/Pods-UIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		677BE9B127D8B58E0071F9AB /* WalkThroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCell.swift; sourceTree = "<group>"; };
+		677BE9B227D8B58E0071F9AB /* WalkThroughCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCellModel.swift; sourceTree = "<group>"; };
+		677BE9B627D8C3C10071F9AB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		677BE9BF27D9600D0071F9AB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		67A0480527D717FA007359A9 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0480827D717FA007359A9 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		67A0480927D717FA007359A9 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
@@ -109,6 +119,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		677BE9AF27D8B50A0071F9AB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9B027D8B51A0071F9AB /* WalkThroughCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		677BE9B027D8B51A0071F9AB /* WalkThroughCell */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9B127D8B58E0071F9AB /* WalkThroughCell.swift */,
+				677BE9B227D8B58E0071F9AB /* WalkThroughCellModel.swift */,
+			);
+			path = WalkThroughCell;
+			sourceTree = "<group>";
+		};
+		677BE9B527D8C3740071F9AB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9B627D8C3C10071F9AB /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		677BE9B827D8CAFD0071F9AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		677BE9BE27D95FF80071F9AB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9BF27D9600D0071F9AB /* AppButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		67A047FB27D717FA007359A9 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +184,10 @@
 		67A0480727D717FA007359A9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				677BE9BE27D95FF80071F9AB /* UIButton */,
+				677BE9B827D8CAFD0071F9AB /* Extensions */,
+				677BE9B527D8C3740071F9AB /* Protocols */,
+				677BE9AF27D8B50A0071F9AB /* Cell */,
 				67A0487A27D7204C007359A9 /* Resources */,
 				67A0480827D717FA007359A9 /* UIComponents.h */,
 				67A0480927D717FA007359A9 /* UIComponents.docc */,
@@ -378,9 +433,14 @@
 			files = (
 				67A0488627D72228007359A9 /* UIImage+Icons.swift in Sources */,
 				67A0488A27D72228007359A9 /* UIImage+Images.swift in Sources */,
+				677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */,
 				67A0488B27D72228007359A9 /* UIColor+Colors.swift in Sources */,
+				677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */,
+				677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */,
 				67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */,
+				677BE9B327D8B58E0071F9AB /* WalkThroughCell.swift in Sources */,
 				67A0489727D72375007359A9 /* StringConstants.swift in Sources */,
+				677BE9BA27D8CB1C0071F9AB /* UICollectionView+Extensions.swift in Sources */,
 				67A0489027D7224D007359A9 /* Fonts.swift in Sources */,
 				67A0488827D72228007359A9 /* Assets.swift in Sources */,
 				67A0489127D7224D007359A9 /* UIFont+Extensions.swift in Sources */,

@@ -19,6 +19,7 @@ $SwiftGen = pod 'SwiftGen', '~> 6.5'
 $SwiftEntryKit = pod 'SwiftEntryKit', '~> 2.0'
 $IQKeyboardManagerSwift = pod 'IQKeyboardManagerSwift', '~> 6.5'
 $KeychainSwift = pod 'KeychainSwift', '~> 20.0'
+$MobilliumUserDefaults = pod 'MobilliumUserDefaults', '~> 2.0'
 
 workspace 'Fodamy'
 
@@ -33,6 +34,7 @@ target 'Fodamy' do
   $IQKeyboardManagerSwift
   $KeychainSwift
   $SwiftEntryKit
+  $MobilliumUserDefaults
 
   target 'FodamyTests' do
     inherit! :search_paths

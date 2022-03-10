@@ -5,3 +5,12 @@
   Created by Mehmet Salih ÇELİK on 8.03.2022.
   
 */
+
+// MARK: - WalkThrough
+"WalkThrough.next" = "İlerle";
+"WalkThrough.start" = "Başla!";
+"WalkThrough.firstTitle" = "Welcome to Fodamy Network!";
+"WalkThrough.secondTitle" = "Finding recipes were not that easy.";
+"WalkThrough.thirdTitle" = "Add new recipe.";
+"WalkThrough.lastTitle" = "Share recipes with others.";
+"WalkThrough.descriptionText" = "Fodamy is the best place to find your favorite recipes in all around the world.";
