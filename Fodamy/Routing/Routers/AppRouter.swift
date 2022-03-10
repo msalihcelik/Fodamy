@@ -7,7 +7,7 @@
 
 final class AppRouter: Router, AppRouter.Routes {
     
-    typealias Routes = HomeRoute & WalkThroughRoute
+    typealias Routes = MainTabBarRoute & WalkThroughRoute
     weak var window: UIWindow?
     
     static let shared = AppRouter()
@@ -25,7 +25,7 @@ final class AppRouter: Router, AppRouter.Routes {
     
     func startApp() {
         if DefaultsKey.isWalkThroughCompleted.value == true {
-            AppRouter.shared.placeOnWindowHome()
+            AppRouter.shared.placeOnWindowMainTabBar()
         } else {
             AppRouter.shared.placeOnWindowWalkThrough()
         }
