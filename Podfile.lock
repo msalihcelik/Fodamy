@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.5.0)
   - IQKeyboardManagerSwift (6.5.9)
   - KeychainSwift (20.0.0)
+  - Kingfisher (6.3.1)
   - MobilliumBuilders (1.4.0)
   - MobilliumUserDefaults (2.0.0)
   - SwiftEntryKit (2.0.0)
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.5)
   - IQKeyboardManagerSwift (~> 6.5)
   - KeychainSwift (~> 20.0)
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, branch `version6-xcode13`)
   - MobilliumBuilders (~> 1.4)
   - MobilliumUserDefaults (~> 2.0)
   - SwiftEntryKit (~> 2.0)
@@ -32,10 +34,21 @@ SPEC REPOS:
     - SwiftLint
     - TinyConstraints
 
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: 2742b4de5036f9352d94c891495a3af3b9bdb67c
+    :git: https://github.com/onevcat/Kingfisher.git
+
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
   MobilliumBuilders: 9990948aea3e132044431289dda869f524fcadac
   MobilliumUserDefaults: 002aa4bb663127d2dcc0814c17430c918a1e1445
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
@@ -43,6 +56,6 @@ SPEC CHECKSUMS:
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 5cd7333756b1c4ebf31eba8d5012a3029269a760
+PODFILE CHECKSUM: 0308272753a3e7cf3f1fe5d185f1e9c03f48ace9
 
 COCOAPODS: 1.11.0

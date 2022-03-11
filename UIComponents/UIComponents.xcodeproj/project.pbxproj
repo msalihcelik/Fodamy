@@ -13,6 +13,8 @@
 		677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B627D8C3C10071F9AB /* ReusableView.swift */; };
 		677BE9BA27D8CB1C0071F9AB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */; };
 		677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9BF27D9600D0071F9AB /* AppButton.swift */; };
+		677BE9CA27DA26AB0071F9AB /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9C927DA26AB0071F9AB /* UIImage+Extensions.swift */; };
+		677BE9D027DA63A50071F9AB /* AppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9CF27DA63A50071F9AB /* AppTitleView.swift */; };
 		67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = 67A0480927D717FA007359A9 /* UIComponents.docc */; };
 		67A0481027D717FA007359A9 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0480527D717FA007359A9 /* UIComponents.framework */; };
 		67A0481527D717FA007359A9 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0481427D717FA007359A9 /* UIComponentsTests.swift */; };
@@ -55,6 +57,9 @@
 		677BE9B627D8C3C10071F9AB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		677BE9BF27D9600D0071F9AB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		677BE9C927DA26AB0071F9AB /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		677BE9CB27DA2C910071F9AB /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		677BE9CF27DA63A50071F9AB /* AppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleView.swift; sourceTree = "<group>"; };
 		67A0480527D717FA007359A9 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0480827D717FA007359A9 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		67A0480927D717FA007359A9 /* UIComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UIComponents.docc; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				677BE9B927D8CB1C0071F9AB /* UICollectionView+Extensions.swift */,
+				677BE9C927DA26AB0071F9AB /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -158,6 +164,14 @@
 				677BE9BF27D9600D0071F9AB /* AppButton.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		677BE9CE27DA63840071F9AB /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				677BE9CF27DA63A50071F9AB /* AppTitleView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		67A047FB27D717FA007359A9 = {
@@ -184,6 +198,7 @@
 		67A0480727D717FA007359A9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				677BE9CE27DA63840071F9AB /* UIView */,
 				677BE9BE27D95FF80071F9AB /* UIButton */,
 				677BE9B827D8CAFD0071F9AB /* Extensions */,
 				677BE9B527D8C3740071F9AB /* Protocols */,
@@ -242,6 +257,7 @@
 				67A0488C27D7224D007359A9 /* Fonts.swift */,
 				67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */,
 				67A0488E27D7224D007359A9 /* Nunito-SemiBold.ttf */,
+				677BE9CB27DA2C910071F9AB /* Nunito-ExtraBold.ttf */,
 				67A0488D27D7224D007359A9 /* UIFont+Extensions.swift */,
 			);
 			path = Fonts;
@@ -431,9 +447,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677BE9D027DA63A50071F9AB /* AppTitleView.swift in Sources */,
 				67A0488627D72228007359A9 /* UIImage+Icons.swift in Sources */,
 				67A0488A27D72228007359A9 /* UIImage+Images.swift in Sources */,
 				677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */,
+				677BE9CA27DA26AB0071F9AB /* UIImage+Extensions.swift in Sources */,
 				67A0488B27D72228007359A9 /* UIColor+Colors.swift in Sources */,
 				677BE9B727D8C3C10071F9AB /* ReusableView.swift in Sources */,
 				677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */,

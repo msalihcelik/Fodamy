@@ -20,6 +20,7 @@ $SwiftEntryKit = pod 'SwiftEntryKit', '~> 2.0'
 $IQKeyboardManagerSwift = pod 'IQKeyboardManagerSwift', '~> 6.5'
 $KeychainSwift = pod 'KeychainSwift', '~> 20.0'
 $MobilliumUserDefaults = pod 'MobilliumUserDefaults', '~> 2.0'
+$Kingfisher = pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher.git', :branch => 'version6-xcode13'
 
 workspace 'Fodamy'
 
@@ -83,6 +84,7 @@ target 'UIComponents' do
   $SwiftEntryKit
   $SwiftGen
   $TinyConstraints
+  $Kingfisher
   
   target 'UIComponentsTests' do
     inherit! :search_paths

@@ -48,6 +48,6 @@ extension WalkThroughViewModel {
     
     func didFinishWalkThroughScene() {
         DefaultsKey.isWalkThroughCompleted.value = true
-        router.placeOnWindowHome()
+        router.placeOnWindowMainTabBar()
     }
 }
