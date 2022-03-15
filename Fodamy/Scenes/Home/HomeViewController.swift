@@ -89,10 +89,7 @@ extension HomeViewController {
         let lastAddedRecipesviewController = RecipesViewController(viewModel: lastAddedRecipesViewModel)
         lastAddedRouter.viewController = lastAddedRecipesviewController
         
-        return [
-            editorChoiceviewController,
-            lastAddedRecipesviewController
-        ]
+        return [editorChoiceviewController, lastAddedRecipesviewController]
     }
     
     private func setSegmentHandler() {
