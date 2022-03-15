@@ -21,6 +21,7 @@ $IQKeyboardManagerSwift = pod 'IQKeyboardManagerSwift', '~> 6.5'
 $KeychainSwift = pod 'KeychainSwift', '~> 20.0'
 $MobilliumUserDefaults = pod 'MobilliumUserDefaults', '~> 2.0'
 $Kingfisher = pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher.git', :branch => 'version6-xcode13'
+$Segmentio = pod 'Segmentio', '~> 4.1'
 
 workspace 'Fodamy'
 
@@ -36,6 +37,7 @@ target 'Fodamy' do
   $KeychainSwift
   $SwiftEntryKit
   $MobilliumUserDefaults
+  $Segmentio
 
   target 'FodamyTests' do
     inherit! :search_paths
