@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F359A324BC4EFC04BAF975C /* Pods_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99201C2DD510E84A9DEACEE /* Pods_Utilities.framework */; };
+		674CD40327DF869C00834AA2 /* Keychain+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CD40227DF869C00834AA2 /* Keychain+Constants.swift */; };
 		677BE9C327D9CF1A0071F9AB /* DefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677BE9C227D9CF1A0071F9AB /* DefaultsKey.swift */; };
 		67A0482E27D71878007359A9 /* Utilities.docc in Sources */ = {isa = PBXBuildFile; fileRef = 67A0482D27D71878007359A9 /* Utilities.docc */; };
 		67A0483427D71878007359A9 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0482927D71878007359A9 /* Utilities.framework */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		5AE78360B21E1CC1E17A3ECF /* Pods-UtilitiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilitiesTests.debug.xcconfig"; path = "Target Support Files/Pods-UtilitiesTests/Pods-UtilitiesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		674CD40227DF869C00834AA2 /* Keychain+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keychain+Constants.swift"; sourceTree = "<group>"; };
 		677BE9C227D9CF1A0071F9AB /* DefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKey.swift; sourceTree = "<group>"; };
 		67A0482927D71878007359A9 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A0482C27D71878007359A9 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		674CD3FF27DF865D00834AA2 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				674CD40227DF869C00834AA2 /* Keychain+Constants.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		677BE9C127D9CF0E0071F9AB /* DefaultsKey */ = {
@@ -125,6 +135,7 @@
 		67A0489827D725CB007359A9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				674CD3FF27DF865D00834AA2 /* Keychain */,
 				67A0489927D725CB007359A9 /* Closures */,
 				677BE9C127D9CF0E0071F9AB /* DefaultsKey */,
 			);
@@ -309,6 +320,7 @@
 				677BE9C327D9CF1A0071F9AB /* DefaultsKey.swift in Sources */,
 				67A0482E27D71878007359A9 /* Utilities.docc in Sources */,
 				67A0489B27D725CB007359A9 /* Closures.swift in Sources */,
+				674CD40327DF869C00834AA2 /* Keychain+Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
