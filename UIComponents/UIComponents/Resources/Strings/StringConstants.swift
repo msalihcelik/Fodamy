@@ -11,6 +11,25 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Home {
+    /// EDİTÖR SEÇİMİ
+    public static let editorChoice = L10n.tr("Localizable", "Home.editorChoice")
+    /// SON EKLENENLER
+    public static let lastAdded = L10n.tr("Localizable", "Home.lastAdded")
+  }
+
+  public enum Toast {
+    /// Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.
+    public static let recipeRequestError = L10n.tr("Localizable", "Toast.recipeRequestError")
+  }
+
+  public enum UserView {
+    /// Follow
+    public static let follow = L10n.tr("Localizable", "UserView.follow")
+    /// Following
+    public static let following = L10n.tr("Localizable", "UserView.following")
+  }
+
   public enum WalkThrough {
     /// Fodamy is the best place to find your favorite recipes in all around the world.
     public static let descriptionText = L10n.tr("Localizable", "WalkThrough.descriptionText")

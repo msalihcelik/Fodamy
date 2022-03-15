@@ -6,22 +6,6 @@ import UIKit
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public extension UIImage {
 
-  static var icEditorsPick: UIImage {
-      return Asset.Icons.icEditorsPick.image
-  }
-
-  static var icMainCourse: UIImage {
-      return Asset.Icons.icMainCourse.image
-  }
-
-  static var icMeat: UIImage {
-      return Asset.Icons.icMeat.image
-  }
-
-  static var icPastry: UIImage {
-      return Asset.Icons.icPastry.image
-  }
-
   static var icBack: UIImage {
       return Asset.Icons.icBack.image
   }

@@ -32,10 +32,6 @@ public enum Asset {
     public static let appZircon = ColorAsset(name: "appZircon")
   }
   public enum Icons {
-    public static let icEditorsPick = ImageAsset(name: "ic_editors_pick")
-    public static let icMainCourse = ImageAsset(name: "ic_main_course")
-    public static let icMeat = ImageAsset(name: "ic_meat")
-    public static let icPastry = ImageAsset(name: "ic_pastry")
     public static let icBack = ImageAsset(name: "ic_back")
     public static let icClock = ImageAsset(name: "ic_clock")
     public static let icClose = ImageAsset(name: "ic_close")
@@ -55,7 +51,11 @@ public enum Asset {
     public static let icWarning = ImageAsset(name: "ic_warning")
   }
   public enum Images {
+    public static let imgEditorsPick = ImageAsset(name: "img_editors_pick")
     public static let imgLogoFodamy = ImageAsset(name: "img_logo_fodamy")
+    public static let imgMainCourse = ImageAsset(name: "img_main_course")
+    public static let imgMeat = ImageAsset(name: "img_meat")
+    public static let imgPastry = ImageAsset(name: "img_pastry")
     public static let imgWalkthrough1 = ImageAsset(name: "img_walkthrough_1")
     public static let imgWalkthrough2 = ImageAsset(name: "img_walkthrough_2")
     public static let imgWalkthrough3 = ImageAsset(name: "img_walkthrough_3")
