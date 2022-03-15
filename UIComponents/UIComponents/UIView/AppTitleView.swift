@@ -19,6 +19,7 @@ public class AppTitleView: UIView {
         self.imageView.image = image
         self.insets = insets
         addSubViews()
+        backgroundColor = .clear
     }
     
     // swiftlint:disable all
