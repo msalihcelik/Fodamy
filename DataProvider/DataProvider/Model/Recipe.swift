@@ -16,7 +16,11 @@ public struct Recipe: Decodable {
     public let images: [Image]
     
     enum CodingKeys: String, CodingKey {
-        case id, title, user, category, images
+        case id
+        case title
+        case user
+        case category
+        case images
         case isEditorChoice = "is_editor_choice"
         case likeCount = "like_count"
         case commentCount = "comment_count"
