@@ -14,3 +14,11 @@
 "WalkThrough.thirdTitle" = "Add new recipe.";
 "WalkThrough.lastTitle" = "Share recipes with others.";
 "WalkThrough.descriptionText" = "Fodamy is the best place to find your favorite recipes in all around the world.";
+
+// MARK: - Home
+"Home.editorChoice" = "EDİTÖR SEÇİMİ";
+"Home.lastAdded" = "SON EKLENENLER";
+
+// MARK: - UserView
+"UserView.following" = "Following";
+"UserView.follow" = "Follow";
