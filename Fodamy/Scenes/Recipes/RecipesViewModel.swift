@@ -57,20 +57,62 @@ final class RecipesViewModel: BaseViewModel<RecipesRouter>, RecipesViewProtocol 
 extension RecipesViewModel {
     
     func fetchRecipesListingType() {
-        var request: GetRecipesRequest
         switch recipesListingType {
         case .editorChoiceRecipes:
-            request = GetRecipesRequest(page: page, listType: .editorChoiceRecipes)
+            getEditorChoice()
         case .lastAddedRecipes:
-            request = GetRecipesRequest(page: page, listType: .lastAddedRecipes)
+            getLastAdded()
         case .categoryRecipes(let categoryId):
-            request = GetRecipesRequest(page: page, listType: .categoryRecipes(categoryId: categoryId))
+            getCategory(categoryId: categoryId)
         }
+    }
+    
+    private func getEditorChoice() {
+        let request = GetEditorChoiceRequest(page: page)
         self.isRequestEnabled = false
-        if page == 1 {
-            showActivityIndicatorView?()
+        if page == 1 { showActivityIndicatorView?() }
+        dataProvider.request(for: request) { [weak self] (result) in
+            guard let self = self else { return }
+            self.hideActivityIndicatorView?()
+            self.isRequestEnabled = true
+            switch result {
+            case .success(let response):
+                let cellItems = response.data.map({ RecipeCellModel(recipe: $0) })
+                self.cellItems.append(contentsOf: cellItems)
+                self.page += 1
+                self.isPagingEnabled = response.pagination.currentPage < response.pagination.lastPage
+                self.didSuccessFetchRecipes?()
+            case .failure(let error):
+                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.") }
+            }
         }
-        
+    }
+    
+    private func getLastAdded() {
+        let request = GetLastAddedRequest(page: page)
+        self.isRequestEnabled = false
+        if page == 1 { showActivityIndicatorView?() }
+        dataProvider.request(for: request) { [weak self] (result) in
+            guard let self = self else { return }
+            self.hideActivityIndicatorView?()
+            self.isRequestEnabled = true
+            switch result {
+            case .success(let response):
+                let cellItems = response.data.map({ RecipeCellModel(recipe: $0) })
+                self.cellItems.append(contentsOf: cellItems)
+                self.page += 1
+                self.isPagingEnabled = response.pagination.currentPage < response.pagination.lastPage
+                self.didSuccessFetchRecipes?()
+            case .failure(let error):
+                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.") }
+            }
+        }
+    }
+    
+    private func getCategory(categoryId: Int) {
+        let request = GetCategoryRequest(page: page, categoryId: categoryId)
+        self.isRequestEnabled = false
+        if page == 1 { showActivityIndicatorView?() }
         dataProvider.request(for: request) { [weak self] (result) in
             guard let self = self else { return }
             self.hideActivityIndicatorView?()
