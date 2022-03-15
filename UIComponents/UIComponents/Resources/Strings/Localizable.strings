@@ -22,3 +22,6 @@
 // MARK: - UserView
 "UserView.following" = "Following";
 "UserView.follow" = "Follow";
+
+// MARK: - Toast
+"Toast.recipeRequestError" = "Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.";

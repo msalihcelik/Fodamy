@@ -83,7 +83,7 @@ extension RecipesViewModel {
                 self.isPagingEnabled = response.pagination.currentPage < response.pagination.lastPage
                 self.didSuccessFetchRecipes?()
             case .failure(let error):
-                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.") }
+                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) \(L10n.Toast.recipeRequestError)") }
             }
         }
     }
@@ -104,7 +104,7 @@ extension RecipesViewModel {
                 self.isPagingEnabled = response.pagination.currentPage < response.pagination.lastPage
                 self.didSuccessFetchRecipes?()
             case .failure(let error):
-                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.") }
+                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) \(L10n.Toast.recipeRequestError)") }
             }
         }
     }
@@ -125,7 +125,7 @@ extension RecipesViewModel {
                 self.isPagingEnabled = response.pagination.currentPage < response.pagination.lastPage
                 self.didSuccessFetchRecipes?()
             case .failure(let error):
-                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.") }
+                if self.page == 1 { self.showWarningToast?("\(error.localizedDescription) \(L10n.Toast.recipeRequestError)") }
             }
         }
     }

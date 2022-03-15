@@ -9,10 +9,10 @@ public struct GetEditorChoiceRequest: ApiDecodableResponseRequest {
     
     public typealias ResponseType = BaseResponse<[Recipe]>
     
-    public var path: String = "editor-choices"
-    public var method: RequestMethod = .get
+    public let path: String = "editor-choices"
+    public let method: RequestMethod = .get
     public var parameters: RequestParameters = [:]
-    public var headers: RequestHeaders = [:]
+    public let headers: RequestHeaders = [:]
 
     public init(page: Int) {
         self.parameters["page"] = page

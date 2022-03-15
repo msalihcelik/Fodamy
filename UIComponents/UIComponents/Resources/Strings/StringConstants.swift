@@ -18,6 +18,11 @@ public enum L10n {
     public static let lastAdded = L10n.tr("Localizable", "Home.lastAdded")
   }
 
+  public enum Toast {
+    /// Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.
+    public static let recipeRequestError = L10n.tr("Localizable", "Toast.recipeRequestError")
+  }
+
   public enum UserView {
     /// Follow
     public static let follow = L10n.tr("Localizable", "UserView.follow")
