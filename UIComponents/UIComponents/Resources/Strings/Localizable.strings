@@ -23,5 +23,8 @@
 "UserView.following" = "Following";
 "UserView.follow" = "Follow";
 
+// MARK: - Favorites
+"Favorites.seeAll" = "TÜMÜNÜ GÖR";
+
 // MARK: - Toast
 "Toast.recipeRequestError" = "Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.";
