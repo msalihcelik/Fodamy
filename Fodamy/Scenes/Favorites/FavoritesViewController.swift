@@ -81,7 +81,6 @@ extension FavoritesViewController {
     }
 }
 
-// swiftlint:disable all
 // MARK: - ScrollViewDelegate
 extension FavoritesViewController {
     

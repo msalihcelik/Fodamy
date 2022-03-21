@@ -17,7 +17,7 @@ public protocol FavoritesCellEventSource: AnyObject {
 }
 
 public protocol FavoritesCellProtocol: FavoritesCellDataSource, FavoritesCellEventSource {
-    func testCount() -> Int
+    func getCellCount() -> Int
 }
 
 public final class FavoritesCellModel: FavoritesCellProtocol {
@@ -33,7 +33,7 @@ public final class FavoritesCellModel: FavoritesCellProtocol {
         }
     }
     
-    public func testCount() -> Int {
+    public func getCellCount() -> Int {
         return self.cellItems.count
     }
     
@@ -42,14 +42,5 @@ public final class FavoritesCellModel: FavoritesCellProtocol {
         self.headerLeftImageURL = imageURL
         self.headerCategoryName = categoryName
         self.cellItems = cellItems
-    }
-    
-    public convenience init(data: RecipeCategoriesData) {
-        let cellItems = data.recipes.map({ FavoritesRecipeCellModel(recipe: $0) })
-        guard let url = data.categoryImage?.url else {
-            self.init(categoryId: data.id, imageURL: nil, categoryName: data.name, cellItems: cellItems)
-            return
-        }
-        self.init(categoryId: data.id, imageURL: url, categoryName: data.name, cellItems: cellItems)
     }
 }

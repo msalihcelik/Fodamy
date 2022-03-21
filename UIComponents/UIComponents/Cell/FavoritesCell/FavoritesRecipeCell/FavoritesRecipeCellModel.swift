@@ -42,13 +42,4 @@ public final class FavoritesRecipeCellModel: FavoritesRecipeCellProtocol {
         self.recipeInfo = recipeInfo
         self.isEditorChoice = isEditorChoice
     }
-    
-    public convenience init(recipe: Recipe) {
-        self.init(profileImageURL: recipe.user.image?.url,
-                  username: recipe.user.username,
-                  recipeImageURL: recipe.images.first?.url,
-                  recipeTitle: recipe.title,
-                  recipeInfo: "\(recipe.commentCount) Yorum \(recipe.likeCount) Beğeni",
-                  isEditorChoice: recipe.isEditorChoice)
-    }
 }

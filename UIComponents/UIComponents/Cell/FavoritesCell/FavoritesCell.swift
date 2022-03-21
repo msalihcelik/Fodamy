@@ -137,13 +137,9 @@ extension FavoritesCell {
 }
 
 // MARK: - UICollectionViewDataSource
-extension FavoritesCell: UICollectionViewDataSource { }
-
-// MARK: - UICollectionViewDelegate
-extension FavoritesCell {
-    
+extension FavoritesCell: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel?.testCount() ?? 0
+        return viewModel?.getCellCount() ?? 0
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -154,6 +150,9 @@ extension FavoritesCell {
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegate
+extension FavoritesCell: UICollectionViewDelegate { }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 extension FavoritesCell: UICollectionViewDelegateFlowLayout {
