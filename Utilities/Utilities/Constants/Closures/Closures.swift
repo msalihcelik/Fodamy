@@ -7,3 +7,4 @@
 
 public typealias VoidClosure = (() -> Void)
 public typealias StringClosure = ((String) -> Void)
+public typealias IntClosure = ((Int) -> Void)
