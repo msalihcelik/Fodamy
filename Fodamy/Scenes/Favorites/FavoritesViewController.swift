@@ -9,6 +9,7 @@ final class FavoritesViewController: BaseViewController<FavoritesViewModel> {
     
     private let collectionView = UICollectionViewBuilder()
         .backgroundColor(.clear)
+        .registerCell(FavoritesCell.self, reuseIdentifier: FavoritesCell.reuseIdentifier)
         .build()
     private let refreshControl = UIRefreshControl()
     private var loadingFooterView: ActivityIndicatorFooterView?
@@ -47,7 +48,6 @@ extension FavoritesViewController {
     private func configureContents() {
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(FavoritesCell.self)
         collectionView.registerFooter(ActivityIndicatorFooterView.self)
         collectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)

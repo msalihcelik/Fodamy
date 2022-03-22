@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 16.03.2022.
 //
 
-import UIKit
-
 public class FavoritesCell: UICollectionViewCell, ReusableView {
     
     weak var viewModel: FavoritesCellProtocol?
@@ -52,7 +50,6 @@ public class FavoritesCell: UICollectionViewCell, ReusableView {
     
     public func set(with viewModel: FavoritesCellProtocol) {
         self.viewModel = viewModel
-        self.viewModel?.cellItems = viewModel.cellItems
         headerCategoryLabel.text = viewModel.headerCategoryName
         headerLeftImage.setImage(viewModel.headerLeftImageURL)
         self.collectionView.reloadData()

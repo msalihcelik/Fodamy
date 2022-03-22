@@ -9,10 +9,6 @@ extension FavoritesCellModel {
     
     public convenience init(data: RecipeCategoriesData) {
         let cellItems = data.recipes.map({ FavoritesRecipeCellModel(recipe: $0) })
-        guard let url = data.categoryImage?.url else {
-            self.init(categoryId: data.id, imageURL: nil, categoryName: data.name, cellItems: cellItems)
-            return
-        }
-        self.init(categoryId: data.id, imageURL: url, categoryName: data.name, cellItems: cellItems)
+        self.init(categoryId: data.id, imageURL: data.categoryImage?.url, categoryName: data.name, cellItems: cellItems)
     }
 }

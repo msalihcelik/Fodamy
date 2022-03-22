@@ -9,8 +9,8 @@ public struct GetRecipeCategoriesRequest: ApiDecodableResponseRequest {
     
     public typealias ResponseType = RecipeCategories
 
-    public var path: String = "category-recipes"
-    public var method: RequestMethod = .get
+    public let path: String = "category-recipes"
+    public let method: RequestMethod = .get
     public var parameters: RequestParameters = [:]
     
     public init(page: Int) {

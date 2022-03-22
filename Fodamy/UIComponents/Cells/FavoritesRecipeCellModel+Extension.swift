@@ -12,7 +12,7 @@ extension FavoritesRecipeCellModel {
                   username: recipe.user.username,
                   recipeImageURL: recipe.images.first?.url,
                   recipeTitle: recipe.title,
-                  recipeInfo: "\(recipe.commentCount) Yorum \(recipe.likeCount) Beğeni",
+                  recipeInfo: L10n.FavoritesRecipeCell.recipeInfo(recipe.commentCount, recipe.likeCount),
                   isEditorChoice: recipe.isEditorChoice)
     }
 }

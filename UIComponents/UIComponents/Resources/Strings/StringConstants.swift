@@ -16,6 +16,13 @@ public enum L10n {
     public static let seeAll = L10n.tr("Localizable", "Favorites.seeAll")
   }
 
+  public enum FavoritesRecipeCell {
+    /// %@ Yorum %@ Beğeni
+    public static func recipeInfo(_ p1: Any, _ p2: Any) -> String {
+      return L10n.tr("Localizable", "FavoritesRecipeCell.recipeInfo", String(describing: p1), String(describing: p2))
+    }
+  }
+
   public enum Home {
     /// EDİTÖR SEÇİMİ
     public static let editorChoice = L10n.tr("Localizable", "Home.editorChoice")
