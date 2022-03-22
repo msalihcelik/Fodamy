@@ -42,6 +42,7 @@ final class FavoritesViewModel: BaseViewModel<FavoritesRouter>, FavoritesViewPro
             self.isRequestEnabled = true
             switch result {
             case .success(let response):
+                if self.page == 1 { self.cellItems.removeAll(keepingCapacity: false) }
                 let cellItems = response.data.map({ FavoritesCellModel(data: $0) })
                 self.cellItems.append(contentsOf: cellItems)
                 self.page += 1
@@ -54,9 +55,7 @@ final class FavoritesViewModel: BaseViewModel<FavoritesRouter>, FavoritesViewPro
     }
     
     func pullToRefresh() {
-        self.cellItems.removeAll()
         self.page = 1
         self.getFavorites()
     }
-    
 }

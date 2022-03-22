@@ -71,12 +71,8 @@ extension FavoritesViewController {
     @objc
     private func pullToRefresh() {
         if refreshControl.isRefreshing {
-            if viewModel.numberOfItemsAt(section: 0) == 0 {
-                viewModel.pullToRefresh()
-            } else {
-                viewModel.reloadData?()
-            }
-        refreshControl.endRefreshing()
+            viewModel.pullToRefresh()
+            refreshControl.endRefreshing()
         }
     }
 }
