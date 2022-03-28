@@ -27,5 +27,26 @@
 "Favorites.seeAll" = "TÜMÜNÜ GÖR";
 "FavoritesRecipeCell.recipeInfo" = "%@ Yorum %@ Beğeni";
 
+// MARK: - Detail
+"Detail.comments" = "Yorumlar";
+"Detail.addComment" = "YORUM EKLE";
+"Detail.comment" = " Yorum";
+"Detail.like" = " Like";
+"Detail.necessaries" = "Malzemeler";
+"Detail.stages" = "Yapılışı";
+"Detail.noComment" = "YORUM YOK.";
+
+// MARK: - Comment
+"Comment.recipe" = "Tarif";
+"Comment.follower" = "Takipçi";
+
+// MARK: - General
+"General.back" = "Geri";
+
 // MARK: - Toast
 "Toast.recipeRequestError" = "Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.";
+
+// MARK: - PopUp
+"PopUp.loginWarning" = "Giriş yapmanız gereklidir.";
+"PopUp.login" = "Login";
+"PopUp.cancel" = "Vazgeç";
