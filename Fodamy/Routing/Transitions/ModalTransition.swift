@@ -32,7 +32,8 @@ extension ModalTransition: Transition {
 
     func open(_ viewController: UIViewController) {
         viewController.transitioningDelegate = self
-
+        viewController.modalTransitionStyle = modalTransitionStyle
+        viewController.modalPresentationStyle = modalPresentationStyle
         self.viewController?.present(viewController, animated: isAnimated, completion: completionHandler)
     }
 
