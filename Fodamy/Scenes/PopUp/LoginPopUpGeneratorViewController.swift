@@ -7,42 +7,37 @@
 
 final class LoginPopUpGeneratorViewController: BaseViewController<LoginPopUpGeneratorViewModel> {
     
-    private let contentView = UIViewBuilder()
+    private let mainContentView = UIViewBuilder()
         .backgroundColor(.appWhite)
         .cornerRadius(4)
         .masksToBounds(true)
         .clipsToBounds(true)
         .build()
-    
-    private let descriptionLabel = UILabelBuilder()
+    private let warningLabel = UILabelBuilder()
         .text(L10n.PopUp.loginWarning)
         .textAlignment(.center)
         .textColor(.appCinder)
         .font(.font(.nunitoSemiBold, size: .large))
         .build()
-    
     private let imageView = UIImageViewBuilder()
         .image(.icWarning.withRenderingMode(.alwaysTemplate))
-        .tintColor(.appRed)
+        .tintColor(.yellow)
         .contentMode(.scaleAspectFit)
         .masksToBounds(true)
         .clipsToBounds(true)
         .build()
-    
-    private let buttonStackView = UIStackViewBuilder()
+    private let buttonsStackView = UIStackViewBuilder()
         .axis(.horizontal)
         .alignment(.fill)
         .distribution(.fillEqually)
         .build()
-    
     private let loginButton = UIButtonBuilder()
         .backgroundColor(.appRed)
         .title(L10n.PopUp.login)
         .titleColor(.appWhite)
         .titleFont(.font(.nunitoBold, size: .medium))
         .build()
-    
-    private let giveUpButton = UIButtonBuilder()
+    private let cancelButton = UIButtonBuilder()
         .backgroundColor(.appZircon)
         .title(L10n.PopUp.cancel)
         .titleColor(.appCinder)
@@ -51,42 +46,60 @@ final class LoginPopUpGeneratorViewController: BaseViewController<LoginPopUpGene
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-        setupLayouts()
+        addSubViews()
+        configureContents()
+    }
+}
+
+// MARK: - UILayout
+extension LoginPopUpGeneratorViewController {
+    
+    private func addSubViews() {
+        addMainContentView()
+        addImageView()
+        addWarningLabel()
+        addButtons()
     }
     
-    func setupViews() {
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.40)
-        view.addSubview(contentView)
-        
-        contentView.addSubview(imageView)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(buttonStackView)
-        buttonStackView.addArrangedSubview(giveUpButton)
-        buttonStackView.addArrangedSubview(loginButton)
-        
-        loginButton.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
-        giveUpButton.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
+    private func addMainContentView() {
+        view.addSubview(mainContentView)
+        mainContentView.centerYToSuperview()
+        mainContentView.leftToSuperview(offset: 25)
+        mainContentView.rightToSuperview(offset: -25)
     }
     
-    func setupLayouts() {
-        contentView.centerYToSuperview()
-        contentView.leadingToSuperview().constant = 25
-        contentView.trailingToSuperview().constant = -25
-        
+    private func addImageView() {
+        mainContentView.addSubview(imageView)
         imageView.centerXToSuperview()
-        imageView.topToSuperview().constant = 20
-        imageView.size(CGSize(width: 60, height: 60))
-        
-        descriptionLabel.topToBottom(of: imageView).constant = 16
-        descriptionLabel.edgesToSuperview(excluding: [.top, .bottom])
-        loginButton.height(50)
-        giveUpButton.height(50)
-        
-        buttonStackView.edgesToSuperview(excluding: .top)
-        buttonStackView.topToBottom(of: descriptionLabel).constant = 15
+        imageView.topToSuperview(offset: 20)
+        imageView.size(.init(width: 60, height: 60))
     }
     
+    private func addWarningLabel() {
+        mainContentView.addSubview(warningLabel)
+        warningLabel.topToBottom(of: imageView, offset: 16)
+        warningLabel.edgesToSuperview(excluding: [.top, .bottom])
+    }
+    
+    private func addButtons() {
+        mainContentView.addSubview(buttonsStackView)
+        buttonsStackView.edgesToSuperview(excluding: .top)
+        buttonsStackView.topToBottom(of: warningLabel, offset: 15)
+        buttonsStackView.addArrangedSubview(cancelButton)
+        buttonsStackView.addArrangedSubview(loginButton)
+        loginButton.height(50)
+        cancelButton.height(50)
+    }
+}
+
+// MARK: - Configure
+extension LoginPopUpGeneratorViewController {
+    
+    private func configureContents() {
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.40)
+        loginButton.addTarget(self, action: #selector(touchUpInside(_:)), for: .touchUpInside)
+        cancelButton.addTarget(self, action: #selector(touchUpInside(_:)), for: .touchUpInside)
+    }
 }
 
 // MARK: - Actions
@@ -96,8 +109,8 @@ extension LoginPopUpGeneratorViewController {
         switch sender {
         case loginButton:
             viewModel.loginButtonAction()
-        case giveUpButton:
-            viewModel.giveUpButtonAction()
+        case cancelButton:
+            viewModel.cancelButtonAction()
         default:
             break
         }

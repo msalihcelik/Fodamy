@@ -12,19 +12,19 @@ protocol LoginPopUpGeneratorViewEventSource {
 }
 
 protocol LoginPopUpGeneratorViewProtocol: LoginPopUpGeneratorViewDataSource, LoginPopUpGeneratorViewEventSource {
-    func giveUpButtonAction()
+    func cancelButtonAction()
     func loginButtonAction()
 }
 
 final class LoginPopUpGeneratorViewModel: BaseViewModel<LoginPopUpGeneratorRouter>, LoginPopUpGeneratorViewProtocol {
     var loginHandler: VoidClosure?
     
-    func giveUpButtonAction() {
+    func cancelButtonAction() {
         router.close()
     }
+    
     func loginButtonAction() {
         router.close()
         loginHandler?()
     }
-    
 }
