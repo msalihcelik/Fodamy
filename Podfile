@@ -22,6 +22,7 @@ $KeychainSwift = pod 'KeychainSwift', '~> 20.0'
 $MobilliumUserDefaults = pod 'MobilliumUserDefaults', '~> 2.0'
 $Kingfisher = pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher.git', :branch => 'version6-xcode13'
 $Segmentio = pod 'Segmentio', '~> 4.1'
+$ImageViewer = pod 'ImageViewer.swift', '~> 3.3'
 
 workspace 'Fodamy'
 
@@ -87,6 +88,7 @@ target 'UIComponents' do
   $SwiftGen
   $TinyConstraints
   $Kingfisher
+  $ImageViewer
   
   target 'UIComponentsTests' do
     inherit! :search_paths
