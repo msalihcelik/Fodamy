@@ -14,28 +14,12 @@ public class DetailHeaderView: UIView {
         .showsHorizontalScrollIndicator(false)
         .registerCell(DetailHeaderViewCell.self, reuseIdentifier: DetailHeaderViewCell.reuseIdentifier)
         .build()
-    private let pageControl = UIPageControlBuilder()
+    public let pageControl = UIPageControlBuilder()
         .build()
     
     public var recipeUrlData: [String] = []
     public var recipeImageData: [UIImageView] = []
     public var headerData: [DetailHeaderViewCellProtocol] = []
-    
-    public func fillHeaderData(headerData: [DetailHeaderViewCellProtocol]) {
-        self.recipeImageData.removeAll()
-        self.headerData = headerData
-        self.recipeUrlData = headerData.map({ $0.imageUrl })
-        self.recipeUrlData.forEach { url in
-            let imageView = UIImageView()
-            imageView.setImage(url)
-            DispatchQueue.main.async {
-                self.recipeImageData.append(imageView)
-                self.collectionView.reloadData()
-            }
-        }
-        pageControl.numberOfPages = headerData.count
-        pageControl.isHidden = pageControl.numberOfPages == 1
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,7 +32,6 @@ public class DetailHeaderView: UIView {
         addSubViews()
         configureContents()
     }
-    
 }
 
 // MARK: - UILayout
@@ -83,6 +66,23 @@ extension DetailHeaderView {
         pageControl.pageIndicatorTintColor = UIColor.appRed.withAlphaComponent(0.3)
         pageControl.currentPageIndicatorTintColor = .appWhite
     }
+    
+    public func fillHeaderData(headerData: [DetailHeaderViewCellProtocol]) {
+        self.recipeImageData.removeAll()
+        self.headerData = headerData
+        self.recipeUrlData = headerData.map({ $0.imageUrl })
+        self.recipeUrlData.forEach { url in
+            let imageView = UIImageView()
+            imageView.setImage(url)
+            DispatchQueue.main.async {
+                self.recipeImageData.append(imageView)
+                self.collectionView.reloadData()
+            }
+        }
+        pageControl.numberOfPages = headerData.count
+        pageControl.isHidden = pageControl.numberOfPages == 1
+    }
+    
 }
 
 // MARK: - UICollectionViewDelegate

@@ -99,7 +99,7 @@ extension FavoritesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: FavoritesCell = collectionView.dequeueReusableCell(for: indexPath)
         let cellItem = viewModel.cellItemAt(indexPath: indexPath)
-        cell.set(with: cellItem, seeDetails: viewModel.pushDetail) { [weak self] id, title in
+        cell.set(with: cellItem, seeDetailsClosure: viewModel.pushDetail) { [weak self] id, title in
             guard let self = self else { return }
             self.viewModel.seeAllButtonTapped(categoryId: id, title: title)
         }

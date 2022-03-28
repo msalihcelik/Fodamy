@@ -15,6 +15,8 @@
 		67326BD327EF7948008BCF71 /* LoginPopUpGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BD027EF7948008BCF71 /* LoginPopUpGeneratorViewController.swift */; };
 		67326BD427EF7948008BCF71 /* LoginPopUpGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BD127EF7948008BCF71 /* LoginPopUpGeneratorViewModel.swift */; };
 		67326BD627EF7A1D008BCF71 /* LoginPopUpGeneratorRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BD527EF7A1D008BCF71 /* LoginPopUpGeneratorRoute.swift */; };
+		67326BF427F1F3C9008BCF71 /* CommentCellModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BF327F1F3C9008BCF71 /* CommentCellModel+Extension.swift */; };
+		67326BF627F20025008BCF71 /* RequestAlertViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BF527F20025008BCF71 /* RequestAlertViewRoute.swift */; };
 		6734640F27E8DE9400F4487B /* FavoritesCellModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734640E27E8DE9400F4487B /* FavoritesCellModel+Extension.swift */; };
 		6734641127E8E0CF00F4487B /* FavoritesRecipeCellModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734641027E8E0CF00F4487B /* FavoritesRecipeCellModel+Extension.swift */; };
 		674CD3D327DEC75100834AA2 /* RecipesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CD3D027DEC75100834AA2 /* RecipesRouter.swift */; };
@@ -111,6 +113,8 @@
 		67326BD027EF7948008BCF71 /* LoginPopUpGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPopUpGeneratorViewController.swift; sourceTree = "<group>"; };
 		67326BD127EF7948008BCF71 /* LoginPopUpGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPopUpGeneratorViewModel.swift; sourceTree = "<group>"; };
 		67326BD527EF7A1D008BCF71 /* LoginPopUpGeneratorRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPopUpGeneratorRoute.swift; sourceTree = "<group>"; };
+		67326BF327F1F3C9008BCF71 /* CommentCellModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentCellModel+Extension.swift"; sourceTree = "<group>"; };
+		67326BF527F20025008BCF71 /* RequestAlertViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAlertViewRoute.swift; sourceTree = "<group>"; };
 		6734640E27E8DE9400F4487B /* FavoritesCellModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesCellModel+Extension.swift"; sourceTree = "<group>"; };
 		6734641027E8E0CF00F4487B /* FavoritesRecipeCellModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesRecipeCellModel+Extension.swift"; sourceTree = "<group>"; };
 		674CD3D027DEC75100834AA2 /* RecipesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRouter.swift; sourceTree = "<group>"; };
@@ -279,6 +283,7 @@
 				674CD41A27DF8F2A00834AA2 /* RecipeCellModel+Extension.swift */,
 				6734640E27E8DE9400F4487B /* FavoritesCellModel+Extension.swift */,
 				6734641027E8E0CF00F4487B /* FavoritesRecipeCellModel+Extension.swift */,
+				67326BF327F1F3C9008BCF71 /* CommentCellModel+Extension.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 		67A0485827D719DC007359A9 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				67326BF527F20025008BCF71 /* RequestAlertViewRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -762,10 +768,12 @@
 				67326BD627EF7A1D008BCF71 /* LoginPopUpGeneratorRoute.swift in Sources */,
 				677BE9AB27D8A0890071F9AB /* WalkThroughViewController.swift in Sources */,
 				674CD42B27E1B7B200834AA2 /* FavoritesViewController.swift in Sources */,
+				67326BF627F20025008BCF71 /* RequestAlertViewRoute.swift in Sources */,
 				674CD42C27E1B7B200834AA2 /* FavoritesViewModel.swift in Sources */,
 				67326BD327EF7948008BCF71 /* LoginPopUpGeneratorViewController.swift in Sources */,
 				677BE9C827DA262E0071F9AB /* MainNavigationController.swift in Sources */,
 				67326BD427EF7948008BCF71 /* LoginPopUpGeneratorViewModel.swift in Sources */,
+				67326BF427F1F3C9008BCF71 /* CommentCellModel+Extension.swift in Sources */,
 				677BE9AC27D8A0890071F9AB /* WalkThroughViewModel.swift in Sources */,
 				67326BD227EF7948008BCF71 /* LoginPopUpGeneratorRouter.swift in Sources */,
 				674CD3FA27DF85AC00834AA2 /* ApiLogger.swift in Sources */,

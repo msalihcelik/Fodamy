@@ -67,24 +67,7 @@ final class DetailViewController: BaseViewController<DetailViewModel> {
         configureContents()
         setLocalize()
         subscribeViewModel()
-        viewModel.getRecipeComment()
-        viewModel.getRecipeDetail()
-    }
-    
-    private func subscribeViewModel() {
-        
-        viewModel.reloadDetailData = { [weak self] in
-            self?.fillData()
-        }
-        
-        viewModel.reloadCommentData = { [weak self] in
-            self?.commentsCollectionView.reloadData()
-        }
-        
-        likeCountView.iconTappedAction = { [weak self] in
-            guard let self = self else { return }
-            self.viewModel.likeButtonTapped()
-        }
+        viewModel.getData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -114,7 +97,14 @@ extension DetailViewController {
         mainStackView.widthToSuperview()
         
         mainStackView.addArrangedSubview(headerView)
+        mainStackView.setCustomSpacing(0, after: headerView)
+        headerView.height(375)
+        headerView.aspectRatio(1)
+        
         mainStackView.addArrangedSubview(titleView)
+        mainStackView.setCustomSpacing(1, after: titleView)
+        titleView.height(65)
+        
         mainStackView.addArrangedSubview(countInfoStackView)
         mainStackView.addArrangedSubview(userView)
         mainStackView.addArrangedSubview(necessariesView)
@@ -145,7 +135,6 @@ extension DetailViewController {
         commentButtonView.addSubview(commentButton)
         commentButton.edgesToSuperview(insets: .init(top: 0, left: 15, bottom: 15, right: 15))
         commentButton.addTarget(self, action: #selector(commentButtonTapped), for: .touchUpInside)
-        
     }
 }
 
@@ -156,20 +145,18 @@ extension DetailViewController {
         view.backgroundColor = .appSecondaryBackground
         commentsCollectionView.delegate = self
         commentsCollectionView.dataSource = self
-        configureStackView()
         
-        headerView.height(375)
-        titleView.height(65)
         commentCountView.setIcon = .icComment.withRenderingMode(.alwaysTemplate)
         likeCountView.setIcon = .icHeart.withRenderingMode(.alwaysTemplate)
         
         commentButton.setTitle(L10n.Detail.addComment, for: .normal)
         navigationController?.navigationBar.topItem?.backButtonTitle = L10n.General.back
-    }
-    
-    private func configureStackView() {
-        mainStackView.setCustomSpacing(0, after: headerView)
-        mainStackView.setCustomSpacing(1, after: titleView)
+        
+        let rightBarItem = UIBarButtonItem(image: .icShare,
+                                           style: .done,
+                                           target: self,
+                                           action: #selector(rightBarButtonTapped))
+        navigationItem.setRightBarButton(rightBarItem, animated: true)
     }
     
     private func setLocalize() {
@@ -212,12 +199,42 @@ extension DetailViewController {
     }
 }
 
+// MARK: - SubscribeViewModel
+extension DetailViewController {
+    
+    private func subscribeViewModel() {
+        viewModel.reloadDetailData = { [weak self] in
+            self?.fillData()
+        }
+        
+        viewModel.reloadCommentData = { [weak self] in
+            self?.commentsCollectionView.reloadData()
+        }
+        
+        likeCountView.iconTappedAction = { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.likeButtonTapped()
+        }
+    }
+}
+
 // MARK: - Action
 extension DetailViewController {
     
     @objc
     private func commentButtonTapped() {
         viewModel.commentButtonTapped()
+    }
+    
+    @objc
+    private func rightBarButtonTapped() {
+        let image = headerView.recipeImageData[headerView.pageControl.currentPage]
+        let url = headerView.recipeUrlData[headerView.pageControl.currentPage]
+
+        let activityVC = UIActivityViewController(activityItems: [image, URL(string: url)], applicationActivities: nil)
+        
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
 

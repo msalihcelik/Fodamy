@@ -5,7 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 8.03.2022.
 //
 
-#import <DataProvider/DataProvider.h>
 #import <Utilities/Utilities.h>
 #import <UIKit/UIKit.h>
 #import <MobilliumBuilders/MobilliumBuilders-Swift.h>

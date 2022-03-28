@@ -5,8 +5,6 @@
 //  Created by Mehmet Salih ÇELİK on 24.03.2022.
 //
 
-import Foundation
-
 public protocol DetailHeaderViewCellDataSource: AnyObject {
     var imageUrl: String { get }
     var isEditorChoice: Bool { get }

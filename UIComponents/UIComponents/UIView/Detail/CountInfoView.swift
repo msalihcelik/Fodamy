@@ -59,6 +59,10 @@ public class CountInfoView: UIView {
         super.init(coder: coder)
         configureContents()
     }
+}
+
+// MARK: - Configure
+extension CountInfoView {
     
     private func configureContents() {
         backgroundColor = .appWhite

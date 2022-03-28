@@ -19,6 +19,10 @@
 "Home.editorChoice" = "EDİTÖR SEÇİMİ";
 "Home.lastAdded" = "SON EKLENENLER";
 
+// MARK: - Recipe
+"Recipe.recipeAndFollower" = "%@ Tarif %@ Takipçi";
+"Recipe.recipeCommnetAndLike" = "%@ Yorum %@ Beğeni";
+
 // MARK: - UserView
 "UserView.following" = "Following";
 "UserView.follow" = "Follow";
@@ -35,10 +39,13 @@
 "Detail.necessaries" = "Malzemeler";
 "Detail.stages" = "Yapılışı";
 "Detail.noComment" = "YORUM YOK.";
+"Detail.recipe" = "Tarif";
+"Detail.follower" = "Takipçi";
 
 // MARK: - Comment
 "Comment.recipe" = "Tarif";
 "Comment.follower" = "Takipçi";
+"Comment.recipeAndFollower" = "%@ Tarif %@ Takipçi";
 
 // MARK: - General
 "General.back" = "Geri";

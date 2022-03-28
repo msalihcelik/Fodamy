@@ -12,11 +12,11 @@ extension RecipeCellModel {
                   userId: recipe.user.id,
                   userImageUrl: recipe.user.image?.url,
                   username: recipe.user.username,
-                  userRecipeAndFollowerCountText: "\(recipe.user.recipeCount) \(L10n.Comment.recipe) \(recipe.user.followingCount) \(L10n.Comment.follower)",
+                  userRecipeAndFollowerCountText: "\(L10n.Recipe.recipeAndFollower(recipe.user.recipeCount, recipe.user.followingCount))",
                   recipeTitle: recipe.title,
                   categoryName: recipe.category.name,
                   recipeImageUrl: recipe.images.first?.url,
-                  recipeCommnetAndLikeCountText: "\(recipe.commentCount) \(L10n.Detail.comment) \(recipe.likeCount) \(L10n.Detail.like)",
+                  recipeCommnetAndLikeCountText: "\(L10n.Recipe.recipeCommnetAndLike(recipe.commentCount, recipe.likeCount))",
                   isEditorChoice: recipe.isEditorChoice)
     }
 }
