@@ -18,6 +18,7 @@ protocol RecipesViewEventSource {
 protocol RecipesViewProtocol: RecipesViewDataSource, RecipesViewEventSource {
     func fetchRecipesListingType()
     func fetchMorePages()
+    func didSelectRecipe(at indexPath: IndexPath)
 }
 
 final class RecipesViewModel: BaseViewModel<RecipesRouter>, RecipesViewProtocol {
@@ -50,6 +51,11 @@ final class RecipesViewModel: BaseViewModel<RecipesRouter>, RecipesViewProtocol 
     func cellItem(for indexPath: IndexPath) -> RecipeCellProtocol {
         let item = cellItems[indexPath.row]
         return item
+    }
+    
+    func didSelectRecipe(at indexPath: IndexPath) {
+        let id = cellItems[indexPath.row].recipeId
+        router.pushDetail(recipeId: id)
     }
 }
 

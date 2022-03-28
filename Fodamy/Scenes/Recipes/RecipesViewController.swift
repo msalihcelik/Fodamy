@@ -38,6 +38,7 @@ extension RecipesViewController {
         view.backgroundColor = .appSecondaryBackground
         navigationItem.title = viewModel.title
         refreshControl.addTarget(self, action: #selector(pullToRefreshValueChanged), for: .valueChanged)
+        navigationController?.navigationBar.topItem?.backButtonTitle = L10n.General.back
         configureCollectionView()
     }
     
@@ -127,6 +128,10 @@ extension RecipesViewController: UICollectionViewDataSource {
 // swiftlint:disable line_length
 // MARK: - UICollectionViewDelegateFlowLayout
 extension RecipesViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectRecipe(at: indexPath)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 15
