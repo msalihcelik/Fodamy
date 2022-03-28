@@ -59,3 +59,15 @@ final class FavoritesViewModel: BaseViewModel<FavoritesRouter>, FavoritesViewPro
         self.getFavorites()
     }
 }
+
+// MARK: - Actions
+extension FavoritesViewModel {
+    
+    func pushDetail(_ id: Int) {
+        router.pushDetail(recipeId: id)
+    }
+    
+    func seeAllButtonTapped(categoryId: Int, title: String) {
+        router.pushRecipes(categoryId: categoryId, title: title)
+    }
+}
