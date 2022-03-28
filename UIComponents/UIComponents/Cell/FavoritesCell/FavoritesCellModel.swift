@@ -14,6 +14,8 @@ public protocol FavoritesCellDataSource: AnyObject {
 
 public protocol FavoritesCellEventSource: AnyObject {
     var reloadData: VoidClosure? { get set }
+    var seeDetails: IntClosure? { get set }
+    var seeAll: ((Int, String) -> Void)? { get set }
 }
 
 public protocol FavoritesCellProtocol: FavoritesCellDataSource, FavoritesCellEventSource {
@@ -26,6 +28,8 @@ public final class FavoritesCellModel: FavoritesCellProtocol {
     public var headerLeftImageURL: String?
     public var headerCategoryName: String?
     public var reloadData: VoidClosure?
+    public var seeDetails: IntClosure?
+    public var seeAll: ((Int, String) -> Void)?
     
     public var cellItems: [FavoritesRecipeCellProtocol] {
         didSet {
