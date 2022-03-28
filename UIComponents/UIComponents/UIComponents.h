@@ -11,6 +11,7 @@
 #import <MobilliumBuilders/MobilliumBuilders-Swift.h>
 #import <TinyConstraints/TinyConstraints-Swift.h>
 #import <Kingfisher/Kingfisher-umbrella.h>
+#import <ImageViewer_swift/ImageViewer_swift.h>
 
 //! Project version number for UIComponents.
 FOUNDATION_EXPORT double UIComponentsVersionNumber;
