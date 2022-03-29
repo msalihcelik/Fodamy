@@ -28,7 +28,6 @@ extension RetryButton {
         layer.cornerRadius = 5
         titleLabel?.textAlignment = .center
         setTitle(L10n.General.retry, for: .normal)
-        widthAnchor.constraint(equalToConstant: 150).isActive = true
-        heightAnchor.constraint(equalToConstant: 50).isActive = true
+        size(.init(width: 150, height: 50))
     }
 }
