@@ -14,7 +14,7 @@ public class DetailHeaderView: UIView {
         .showsHorizontalScrollIndicator(false)
         .registerCell(DetailHeaderViewCell.self, reuseIdentifier: DetailHeaderViewCell.reuseIdentifier)
         .build()
-    public let pageControl = UIPageControlBuilder()
+    private let pageControl = UIPageControlBuilder()
         .build()
     
     public var recipeUrlData: [String] = []
@@ -31,6 +31,10 @@ public class DetailHeaderView: UIView {
         super.init(coder: coder)
         addSubViews()
         configureContents()
+    }
+    
+    public var getPageControlCurrentPage: Int {
+        return pageControl.currentPage
     }
 }
 
