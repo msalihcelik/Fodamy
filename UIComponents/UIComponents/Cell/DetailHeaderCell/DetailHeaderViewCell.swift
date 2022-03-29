@@ -18,6 +18,7 @@ public class DetailHeaderViewCell: UICollectionViewCell, ReusableView {
         .contentMode(.center)
         .image(.imgEditorsPick.resize(to: .init(width: 20, height: 24), for: .scaleAspectFit))
         .cornerRadius(20)
+        .clipsToBounds(true)
         .build()
     
     override init(frame: CGRect) {
