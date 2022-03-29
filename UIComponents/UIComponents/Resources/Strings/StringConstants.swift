@@ -58,6 +58,8 @@ public enum L10n {
   public enum General {
     /// Geri
     public static let back = L10n.tr("Localizable", "General.back")
+    /// Yeniden Dene
+    public static let retry = L10n.tr("Localizable", "General.retry")
   }
 
   public enum Home {

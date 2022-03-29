@@ -15,9 +15,14 @@ protocol BaseViewModelEventSource: AnyObject {
     var hideLoading: VoidClosure? { get set }
     
     var showWarningToast: StringClosure? { get set }
+    
+    var showRetryButton: VoidClosure? { get set }
+    var hideRetryButton: VoidClosure? { get set }
 }
 
-protocol BaseViewModelProtocol: BaseViewModelDataSource, BaseViewModelEventSource {}
+protocol BaseViewModelProtocol: BaseViewModelDataSource, BaseViewModelEventSource {
+    func retryButtonTapped()
+}
 
 class BaseViewModel<R: Router>: BaseViewModelProtocol {
     
@@ -29,6 +34,11 @@ class BaseViewModel<R: Router>: BaseViewModelProtocol {
     var showLoading: VoidClosure?
     var hideLoading: VoidClosure?
     var showWarningToast: StringClosure?
+    
+    var showRetryButton: VoidClosure?
+    var hideRetryButton: VoidClosure?
+    
+    func retryButtonTapped() { }
     
     init(router: R, dataProvider: DataProviderProtocol = apiDataProvider) {
         self.router = router

@@ -9,6 +9,10 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController, BaseViewCo
     
     typealias LoadingProtocols = LoadingProtocol & ActivityIndicatorProtocol
     
+    private let retryButton = UIButtonBuilder()
+        .backgroundColor(.appRed)
+        .build()
+    
     var viewModel: V
     
     init(viewModel: V) {
@@ -28,6 +32,28 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController, BaseViewCo
         subscribeLoading()
         subscribeActivityIndicator()
         subscribeToast()
+        subscribeRetryButton()
+    }
+    
+    private func subscribeRetryButton() {
+        viewModel.showRetryButton = { [weak self] in
+            guard let self = self else { return }
+            let retryButton = RetryButton()
+            self.view.addSubview(retryButton)
+            retryButton.centerInSuperview()
+            self.view.bringSubviewToFront(retryButton)
+            retryButton.addTarget(self, action: #selector(self.retryButtonTapped), for: .touchUpInside)
+        }
+        
+        viewModel.hideRetryButton = { [weak self] in
+            guard let self = self else { return }
+            self.view.subviews.filter({ $0 is RetryButton }).forEach({ $0.removeFromSuperview() })
+        }
+    }
+    
+    @objc
+    private func retryButtonTapped() {
+        viewModel.retryButtonTapped()
     }
     
     private func subscribeActivityIndicator() {

@@ -69,11 +69,6 @@ final class DetailViewController: BaseViewController<DetailViewModel> {
         subscribeViewModel()
         viewModel.getData()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        userView.isFollowButtonHidden = true
-    }
 }
 
 // MARK: - UILayout
@@ -98,7 +93,6 @@ extension DetailViewController {
         
         mainStackView.addArrangedSubview(headerView)
         mainStackView.setCustomSpacing(0, after: headerView)
-        headerView.height(375)
         headerView.aspectRatio(1)
         
         mainStackView.addArrangedSubview(titleView)
@@ -143,6 +137,7 @@ extension DetailViewController {
     
     private func configureContents() {
         view.backgroundColor = .appSecondaryBackground
+        self.scrollView.isHidden = true
         commentsCollectionView.delegate = self
         commentsCollectionView.dataSource = self
         
@@ -211,6 +206,10 @@ extension DetailViewController {
             self?.commentsCollectionView.reloadData()
         }
         
+        viewModel.showSubViews = {
+            self.scrollView.isHidden = false
+        }
+        
         likeCountView.iconTappedAction = { [weak self] in
             guard let self = self else { return }
             self.viewModel.likeButtonTapped()
@@ -228,8 +227,8 @@ extension DetailViewController {
     
     @objc
     private func rightBarButtonTapped() {
-        let image = headerView.recipeImageData[headerView.pageControl.currentPage]
-        let url = headerView.recipeUrlData[headerView.pageControl.currentPage]
+        let image = headerView.recipeImageData[headerView.getPageControlCurrentPage]
+        let url = headerView.recipeUrlData[headerView.getPageControlCurrentPage]
 
         let activityVC = UIActivityViewController(activityItems: [image, URL(string: url)], applicationActivities: nil)
         

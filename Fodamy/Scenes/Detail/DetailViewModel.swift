@@ -39,7 +39,7 @@ protocol DetailViewProtocol: DetailViewDataSource, DetailViewEventSource {}
 
 final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
 
-    var recipeId: Int
+    let recipeId: Int
     
     var titleRecipeName: String?
     var titleCategoryName: String?
@@ -58,7 +58,7 @@ final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
     var isFollowing = false
     var userFollowedCount: Int? {
         didSet {
-            userRecipeAndFollower = "\(userRecipeCount ?? 0) Tarif \(userFollowedCount ?? 0) Takipçi"
+            userRecipeAndFollower = "\(userRecipeCount ?? 0) \(L10n.Detail.recipe) \(userFollowedCount ?? 0) \(L10n.Detail.follower)"
         }
     }
     
@@ -78,6 +78,12 @@ final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
     var headerCellItems: [DetailHeaderViewCellProtocol] = []
     
     let keychain = KeychainSwift()
+    let group = DispatchGroup()
+    
+    var isRecipeDataFetched: Bool = false
+    var isCommentsFetched: Bool = false
+    
+    var showSubViews: VoidClosure?
     
     init(recipeId: Int, router: DetailRouter) {
         self.recipeId = recipeId
@@ -119,6 +125,11 @@ final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
             headerCellItems.append(DetailHeaderViewCellModel(imageUrl: image.url ?? "", isEditorChoice: recipeDetail.isEditorChoice))
         }
     }
+    
+    override func retryButtonTapped() {
+        hideRetryButton?()
+        getData()
+    }
 }
 
 // MARK: - Actions
@@ -132,30 +143,62 @@ extension DetailViewModel {
 // MARK: - Network
 extension DetailViewModel {
     
+    func getData() {
+        
+        if !isCommentsFetched || !isRecipeDataFetched {
+            self.showActivityIndicatorView?()
+        }
+        
+        if !isRecipeDataFetched {
+            getRecipeDetail()
+        }
+        
+        if !isCommentsFetched {
+            getRecipeComment()
+        }
+        
+        group.notify(queue: .main) { [weak self] in
+            guard let self = self else { return }
+            self.hideActivityIndicatorView?()
+            if self.isRecipeDataFetched && self.isCommentsFetched {
+                self.reloadDetailData?()
+                self.reloadCommentData?()
+                self.showSubViews?()
+            } else {
+                self.showRetryButton?()
+            }
+        }
+    }
+    
     func getRecipeDetail() {
+        group.enter()
         dataProvider.request(for: GetDetailRequest(recipeId: recipeId)) { [weak self] result in
             guard let self = self else { return }
+            self.group.leave()
             switch result {
             case .success(let recipeDetail):
                 self.setDetail(recipeDetail: recipeDetail)
-                self.reloadDetailData?()
+                self.isRecipeDataFetched = true
             case .failure(let error ):
-                print(error.localizedDescription)
+                self.showWarningToast?(error.localizedDescription)
             }
         }
     }
     
     func getRecipeComment() {
+        
         let request = GetCommentRequest(recipeId: recipeId)
+        group.enter()
         dataProvider.request(for: request) { [weak self] result in
+            guard let self = self else { return }
+            self.group.leave()
             switch result {
             case .success(let response):
-                guard let self = self else { return }
                 let cellItems = response.data.map({ CommentCellModel(comment: $0) })
                 self.cellItems = cellItems
-                self.reloadCommentData?()
-            case .failure(_ ):
-                self?.reloadCommentData?()
+                self.isCommentsFetched = true
+            case .failure(let error):
+                self.showWarningToast?(error.localizedDescription)
             }
         }
     }

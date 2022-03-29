@@ -49,6 +49,7 @@
 
 // MARK: - General
 "General.back" = "Geri";
+"General.retry" = "Yeniden Dene";
 
 // MARK: - Toast
 "Toast.recipeRequestError" = "Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.";
