@@ -27,7 +27,7 @@ public class UserView: UIView {
         .textColor(.appRaven)
         .build()
     
-    private lazy var followButton = AppButton()
+    private lazy var followButton = FollowButton()
     
     public var userImageUrl: String? {
         willSet {

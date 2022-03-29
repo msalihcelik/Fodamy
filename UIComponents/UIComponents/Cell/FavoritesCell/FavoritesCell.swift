@@ -48,12 +48,13 @@ public class FavoritesCell: UICollectionViewCell, ReusableView {
         subscribeViewModel()
     }
     
-    public func set(with viewModel: FavoritesCellProtocol) {
+    public func set(with viewModel: FavoritesCellProtocol, seeDetailsClosure: IntClosure?, seeAllClosure: ((Int, String) -> Void)?) {
         self.viewModel = viewModel
         headerCategoryLabel.text = viewModel.headerCategoryName
         headerLeftImage.setImage(viewModel.headerLeftImageURL)
         self.collectionView.reloadData()
-        
+        self.viewModel?.seeDetailsClosure = seeDetailsClosure
+        self.viewModel?.seeAllClosure = seeAllClosure
     }
     
     public override func prepareForReuse() {
@@ -116,10 +117,24 @@ extension FavoritesCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(FavoritesRecipeCell.self)
+        
+        headerRightButton.addTarget(self, action: #selector(seeAllButtonTapped), for: .touchUpInside)
     }
     
     private func setLocalize() {
         headerRightButton.setTitle(L10n.Favorites.seeAll, for: .normal)
+    }
+}
+
+// MARK: - Actions
+extension FavoritesCell {
+    
+    @objc
+    private func seeAllButtonTapped() {
+        guard let categoryId = viewModel?.categoryId,
+              let categoryName = viewModel?.headerCategoryName
+        else { return }
+        viewModel?.seeAllClosure?(categoryId, categoryName)
     }
 }
 
@@ -149,7 +164,13 @@ extension FavoritesCell: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionViewDelegate
-extension FavoritesCell: UICollectionViewDelegate { }
+extension FavoritesCell: UICollectionViewDelegate {
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let id = viewModel?.cellItems[indexPath.row].recipeId else { return }
+        viewModel?.seeDetailsClosure?(id)
+    }
+}
 
 // MARK: - UICollectionViewDelegateFlowLayout
 extension FavoritesCell: UICollectionViewDelegateFlowLayout {

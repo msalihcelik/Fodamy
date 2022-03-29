@@ -12,11 +12,11 @@ extension RecipeCellModel {
                   userId: recipe.user.id,
                   userImageUrl: recipe.user.image?.url,
                   username: recipe.user.username,
-                  userRecipeAndFollowerCountText: "\(recipe.user.recipeCount) Tarif \(recipe.user.followingCount) Takipçi",
+                  userRecipeAndFollowerCountText: "\(L10n.Recipe.recipeAndFollower(recipe.user.recipeCount, recipe.user.followingCount))",
                   recipeTitle: recipe.title,
                   categoryName: recipe.category.name,
                   recipeImageUrl: recipe.images.first?.url,
-                  recipeCommnetAndLikeCountText: "\(recipe.commentCount) Yorum \(recipe.likeCount) Beğeni",
+                  recipeCommnetAndLikeCountText: "\(L10n.Recipe.recipeCommnetAndLike(recipe.commentCount, recipe.likeCount))",
                   isEditorChoice: recipe.isEditorChoice)
     }
 }

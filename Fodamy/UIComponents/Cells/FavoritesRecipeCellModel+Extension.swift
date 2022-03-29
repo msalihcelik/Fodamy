@@ -13,6 +13,7 @@ extension FavoritesRecipeCellModel {
                   recipeImageURL: recipe.images.first?.url,
                   recipeTitle: recipe.title,
                   recipeInfo: L10n.FavoritesRecipeCell.recipeInfo(recipe.commentCount, recipe.likeCount),
-                  isEditorChoice: recipe.isEditorChoice)
+                  isEditorChoice: recipe.isEditorChoice,
+                  recipeId: recipe.id)
     }
 }

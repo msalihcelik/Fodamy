@@ -19,6 +19,10 @@
 "Home.editorChoice" = "EDİTÖR SEÇİMİ";
 "Home.lastAdded" = "SON EKLENENLER";
 
+// MARK: - Recipe
+"Recipe.recipeAndFollower" = "%@ Tarif %@ Takipçi";
+"Recipe.recipeCommnetAndLike" = "%@ Yorum %@ Beğeni";
+
 // MARK: - UserView
 "UserView.following" = "Following";
 "UserView.follow" = "Follow";
@@ -27,5 +31,30 @@
 "Favorites.seeAll" = "TÜMÜNÜ GÖR";
 "FavoritesRecipeCell.recipeInfo" = "%@ Yorum %@ Beğeni";
 
+// MARK: - Detail
+"Detail.comments" = "Yorumlar";
+"Detail.addComment" = "YORUM EKLE";
+"Detail.comment" = " Yorum";
+"Detail.like" = " Like";
+"Detail.necessaries" = "Malzemeler";
+"Detail.stages" = "Yapılışı";
+"Detail.noComment" = "YORUM YOK.";
+"Detail.recipe" = "Tarif";
+"Detail.follower" = "Takipçi";
+
+// MARK: - Comment
+"Comment.recipe" = "Tarif";
+"Comment.follower" = "Takipçi";
+"Comment.recipeAndFollower" = "%@ Tarif %@ Takipçi";
+
+// MARK: - General
+"General.back" = "Geri";
+"General.retry" = "Yeniden Dene";
+
 // MARK: - Toast
 "Toast.recipeRequestError" = "Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.";
+
+// MARK: - PopUp
+"PopUp.loginWarning" = "Giriş yapmanız gereklidir.";
+"PopUp.login" = "Login";
+"PopUp.cancel" = "Vazgeç";
