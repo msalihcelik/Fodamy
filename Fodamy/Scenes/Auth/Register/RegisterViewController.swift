@@ -13,6 +13,11 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         .build()
     private let headerView = AuthHeaderView()
     
+    private let contentStackView = UIStackViewBuilder()
+        .spacing(15)
+        .axis(.vertical)
+        .build()
+    
     private let formStackView = UIStackViewBuilder()
         .axis(.vertical)
         .distribution(.fillEqually)
@@ -26,7 +31,7 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         .axis(.vertical)
         .spacing(10)
         .build()
-    private let forgotPasswordView = UIViewBuilder()
+    private let forgotPasswordContainerView = UIViewBuilder()
         .build()
     private let forgotPasswordButton = UIButtonBuilder()
         .titleFont(.font(.nunitoSemiBold, size: .xLarge))
@@ -51,6 +56,7 @@ extension RegisterViewController {
         addScrollView()
         addContentView()
         addHeader()
+        addContentStackView()
         addFormStackView()
         addButtonStackView()
         addSignInView()
@@ -72,25 +78,26 @@ extension RegisterViewController {
         headerView.edgesToSuperview(excluding: .bottom, insets: .init(top: 50, left: 15, bottom: 0, right: 15))
     }
     
-    private func addFormStackView() {
-        contentView.addSubview(formStackView)
-        formStackView.topToBottom(of: headerView, offset: 50)
-        formStackView.edgesToSuperview(excluding: [.top, .bottom], insets: .left(15) + .right(15))
+    private func addContentStackView() {
+        contentView.addSubview(contentStackView)
+        contentStackView.topToBottom(of: headerView, offset: 50)
+        contentStackView.edgesToSuperview(excluding: .top, insets: .left(15) + .right(15))
         
+        contentStackView.addArrangedSubview(formStackView)
+        contentStackView.addArrangedSubview(buttonStackView)
+    }
+    
+    private func addFormStackView() {
         formStackView.addArrangedSubview(usernameTextField)
         formStackView.addArrangedSubview(emailTextField)
         formStackView.addArrangedSubview(passwordTextField)
     }
     
     private func addButtonStackView() {
-        contentView.addSubview(buttonStackView)
-        buttonStackView.topToBottom(of: formStackView, offset: 15)
-        buttonStackView.edgesToSuperview(excluding: .top, insets: .left(15) + .right(15))
-        
         buttonStackView.addArrangedSubview(signUpButton)
-        buttonStackView.addArrangedSubview(forgotPasswordView)
+        buttonStackView.addArrangedSubview(forgotPasswordContainerView)
         
-        forgotPasswordView.addSubview(forgotPasswordButton)
+        forgotPasswordContainerView.addSubview(forgotPasswordButton)
         forgotPasswordButton.edgesToSuperview(excluding: .left)
     }
     
