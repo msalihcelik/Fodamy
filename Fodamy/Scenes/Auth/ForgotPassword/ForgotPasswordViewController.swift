@@ -74,6 +74,7 @@ extension ForgotPasswordViewController {
     
     private func configureContents() {
         resetButton.addTarget(self, action: #selector(resetButtonTapped), for: .touchUpInside)
+        emailTextField.leftImage = .icMail
     }
     
     private func setLocalize() {
