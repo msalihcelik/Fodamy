@@ -55,6 +55,19 @@ public enum L10n {
     }
   }
 
+  public enum Forgot {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Forgot.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Forgot.emptyEmail")
+    /// Sıfırla
+    public static let reset = L10n.tr("Localizable", "Forgot.reset")
+    /// Success
+    public static let success = L10n.tr("Localizable", "Forgot.success")
+    /// Şifre Sıfırlama
+    public static let title = L10n.tr("Localizable", "Forgot.title")
+  }
+
   public enum General {
     /// Geri
     public static let back = L10n.tr("Localizable", "General.back")

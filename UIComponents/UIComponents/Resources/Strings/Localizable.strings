@@ -58,3 +58,10 @@
 "PopUp.loginWarning" = "Giriş yapmanız gereklidir.";
 "PopUp.login" = "Login";
 "PopUp.cancel" = "Vazgeç";
+
+// MARK: - Forgot
+"Forgot.title" = "Şifre Sıfırlama";
+"Forgot.email" = "E-mail Adresi";
+"Forgot.reset" = "Sıfırla";
+"Forgot.emptyEmail" = "E-mail alanı boş bırakılamaz.";
+"Forgot.success" = "Success";
