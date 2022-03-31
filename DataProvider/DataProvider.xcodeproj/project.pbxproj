@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67203B0427F555AA001A0CBF /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B0327F555AA001A0CBF /* Auth.swift */; };
 		67326BB727EDB1C1008BCF71 /* GetDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */; };
 		67326BBA27EDB22E008BCF71 /* GetDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */; };
 		67326BBC27EDB2E6008BCF71 /* TimeOfRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BBB27EDB2E6008BCF71 /* TimeOfRecipe.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		051E11E6484FA701EAF089B2 /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		27EE6CB5C2BB335FA991E76A /* Pods-DataProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67203B0327F555AA001A0CBF /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailRequest.swift; sourceTree = "<group>"; };
 		67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailResponse.swift; sourceTree = "<group>"; };
 		67326BBB27EDB2E6008BCF71 /* TimeOfRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfRecipe.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				674CD47627E4A66E00834AA2 /* RecipeCategories.swift */,
 				674CD47827E4A79500834AA2 /* RecipeCategoriesData.swift */,
 				674CD47C27E8027700834AA2 /* CategoryImage.swift */,
+				67203B0327F555AA001A0CBF /* Auth.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				67326BBA27EDB22E008BCF71 /* GetDetailResponse.swift in Sources */,
 				674CD40627DF87B200834AA2 /* User.swift in Sources */,
 				674CD42327E0774C00834AA2 /* GetLastAddedRequest.swift in Sources */,
+				67203B0427F555AA001A0CBF /* Auth.swift in Sources */,
 				674CD47D27E8027700834AA2 /* CategoryImage.swift in Sources */,
 				67326BC227EF5688008BCF71 /* GetCommentResponse.swift in Sources */,
 			);
