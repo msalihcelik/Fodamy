@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43AFEEF86F463F87DBE39C2A /* Pods_UIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072944FE2015860D892F1083 /* Pods_UIComponentsTests.framework */; };
 		67203ABA27F2E527001A0CBF /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203AB927F2E527001A0CBF /* RetryButton.swift */; };
+		67203AFD27F54892001A0CBF /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */; };
 		67326B9F27EC586C008BCF71 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9E27EC586C008BCF71 /* DetailHeaderView.swift */; };
 		67326BA627EC6E70008BCF71 /* DetailHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BA427EC6E70008BCF71 /* DetailHeaderViewCell.swift */; };
 		67326BA727EC6E70008BCF71 /* DetailHeaderViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BA527EC6E70008BCF71 /* DetailHeaderViewCellModel.swift */; };
@@ -99,6 +100,7 @@
 		15180225E7CE21CFB9D7900B /* Pods-UIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-UIComponentsTests/Pods-UIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52290B6F82F5CAA541DEC62C /* Pods-UIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsTests/Pods-UIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		67203AB927F2E527001A0CBF /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
 		67326B9E27EC586C008BCF71 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		67326BA427EC6E70008BCF71 /* DetailHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderViewCell.swift; sourceTree = "<group>"; };
 		67326BA527EC6E70008BCF71 /* DetailHeaderViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderViewCellModel.swift; sourceTree = "<group>"; };
@@ -201,6 +203,14 @@
 				072944FE2015860D892F1083 /* Pods_UIComponentsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67203AFB27F547AB001A0CBF /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		67326BA027EC5AA5008BCF71 /* Detail */ = {
@@ -407,12 +417,13 @@
 			isa = PBXGroup;
 			children = (
 				67326BF027F18201008BCF71 /* UICollectionView */,
-				674CD3F127DF231400834AA2 /* Toast */,
-				6734640B27E8661100F4487B /* UILabel */,
-				674CD3EE27DF21DA00834AA2 /* UIActivityIndicatorView */,
-				674CD3E127DF1D5100834AA2 /* Loading */,
-				677BE9CE27DA63840071F9AB /* UIView */,
+				67203AFB27F547AB001A0CBF /* UITextField */,
 				677BE9BE27D95FF80071F9AB /* UIButton */,
+				6734640B27E8661100F4487B /* UILabel */,
+				677BE9CE27DA63840071F9AB /* UIView */,
+				674CD3EE27DF21DA00834AA2 /* UIActivityIndicatorView */,
+				674CD3F127DF231400834AA2 /* Toast */,
+				674CD3E127DF1D5100834AA2 /* Loading */,
 				677BE9B827D8CAFD0071F9AB /* Extensions */,
 				677BE9B527D8C3740071F9AB /* Protocols */,
 				677BE9AF27D8B50A0071F9AB /* Cell */,
@@ -679,6 +690,7 @@
 				677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */,
 				674CD3F527DF233C00834AA2 /* ToastPresenter.swift in Sources */,
 				67326BB327EDA187008BCF71 /* CommentCell.swift in Sources */,
+				67203AFD27F54892001A0CBF /* FloatingLabelTextField.swift in Sources */,
 				67326BC527EF614D008BCF71 /* EmptyCell.swift in Sources */,
 				674CD47427E364A100834AA2 /* FavoritesRecipeCell.swift in Sources */,
 				67326BC727EF618C008BCF71 /* EmptyCellModel.swift in Sources */,
