@@ -120,6 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67203B0927F557F0001A0CBF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		67326BB527EDB18B008BCF71 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +168,7 @@
 		674CD40D27DF8A5C00834AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				67203B0927F557F0001A0CBF /* Auth */,
 				674CD40E27DF8A6900834AA2 /* Recipe */,
 			);
 			path = Requests;

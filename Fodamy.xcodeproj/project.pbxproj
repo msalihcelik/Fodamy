@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67203B0727F5572F001A0CBF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B0627F5572F001A0CBF /* Validation.swift */; };
 		67326B9B27EC4C4A008BCF71 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9827EC4C4A008BCF71 /* DetailRouter.swift */; };
 		67326B9C27EC4C4A008BCF71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9927EC4C4A008BCF71 /* DetailViewController.swift */; };
 		67326B9D27EC4C4A008BCF71 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9A27EC4C4A008BCF71 /* DetailViewModel.swift */; };
@@ -104,6 +105,7 @@
 		11546548245DAEE1177F7BDE /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FodamyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67203B0627F5572F001A0CBF /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		67326B9827EC4C4A008BCF71 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		67326B9927EC4C4A008BCF71 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		67326B9A27EC4C4A008BCF71 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -224,6 +226,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		67203B0527F55723001A0CBF /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				67203B0627F5572F001A0CBF /* Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		67203B0827F557B3001A0CBF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		67326B9727EC4888008BCF71 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +358,7 @@
 		67A047A527D713E1007359A9 /* Fodamy */ = {
 			isa = PBXGroup;
 			children = (
+				67203B0527F55723001A0CBF /* Validation */,
 				674CD41827DF8F0500834AA2 /* UIComponents */,
 				674CD3F827DF859A00834AA2 /* DataProvider */,
 				67A0486127D71A70007359A9 /* Configurations */,
@@ -452,6 +470,7 @@
 		67A0486627D71C5D007359A9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				67203B0827F557B3001A0CBF /* Auth */,
 				67326BC827EF7877008BCF71 /* PopUp */,
 				67326B9727EC4888008BCF71 /* Detail */,
 				674CD42627E1B6D600834AA2 /* Favorites */,
@@ -746,6 +765,7 @@
 			files = (
 				674CD42A27E1B7B200834AA2 /* FavoritesRouter.swift in Sources */,
 				674CD3D527DEC75100834AA2 /* RecipesViewModel.swift in Sources */,
+				67203B0727F5572F001A0CBF /* Validation.swift in Sources */,
 				674CD41B27DF8F2A00834AA2 /* RecipeCellModel+Extension.swift in Sources */,
 				67A0486F27D71C5D007359A9 /* HomeRoute.swift in Sources */,
 				677BE9AA27D8A0890071F9AB /* WalkThroughRouter.swift in Sources */,
