@@ -114,6 +114,15 @@ public enum L10n {
     public static let following = L10n.tr("Localizable", "UserView.following")
   }
 
+  public enum Validation {
+    /// Lütfen geçerli bir E-mail adresi girin
+    public static let email = L10n.tr("Localizable", "Validation.email")
+    /// Lütfen geçerli bir ad girin.
+    public static let name = L10n.tr("Localizable", "Validation.name")
+    /// Şifre en az 6 karakterden oluşmalıdır.
+    public static let password = L10n.tr("Localizable", "Validation.password")
+  }
+
   public enum WalkThrough {
     /// Fodamy is the best place to find your favorite recipes in all around the world.
     public static let descriptionText = L10n.tr("Localizable", "WalkThrough.descriptionText")

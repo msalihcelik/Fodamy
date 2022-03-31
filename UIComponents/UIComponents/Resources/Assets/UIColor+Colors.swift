@@ -14,8 +14,16 @@ public extension UIColor {
       return Asset.Colors.appSecondaryBackground.color
   }
 
+  static var appBlack: UIColor {
+      return Asset.Colors.appBlack.color
+  }
+
   static var appCinder: UIColor {
       return Asset.Colors.appCinder.color
+  }
+
+  static var appGreen: UIColor {
+      return Asset.Colors.appGreen.color
   }
 
   static var appHeather: UIColor {

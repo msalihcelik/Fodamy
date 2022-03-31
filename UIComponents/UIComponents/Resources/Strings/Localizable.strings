@@ -65,3 +65,8 @@
 "Forgot.reset" = "Sıfırla";
 "Forgot.emptyEmail" = "E-mail alanı boş bırakılamaz.";
 "Forgot.success" = "Success";
+
+// MARK: - Validation
+"Validation.name" = "Lütfen geçerli bir ad girin.";
+"Validation.email" = "Lütfen geçerli bir E-mail adresi girin";
+"Validation.password" = "Şifre en az 6 karakterden oluşmalıdır.";
