@@ -82,6 +82,25 @@ public enum L10n {
     public static let lastAdded = L10n.tr("Localizable", "Home.lastAdded")
   }
 
+  public enum Login {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Login.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Login.emptyEmail")
+    /// Şifre alanı boş bırakılamaz.
+    public static let emptyPassword = L10n.tr("Localizable", "Login.emptyPassword")
+    /// Şifrenizi mi unuttunuz?
+    public static let forgotPassword = L10n.tr("Localizable", "Login.forgotPassword")
+    /// Hesabın mı yok?
+    public static let haveNotAccount = L10n.tr("Localizable", "Login.haveNotAccount")
+    /// Şifre
+    public static let password = L10n.tr("Localizable", "Login.password")
+    /// Üye Ol
+    public static let signUp = L10n.tr("Localizable", "Login.signUp")
+    /// Giriş Yap
+    public static let title = L10n.tr("Localizable", "Login.title")
+  }
+
   public enum PopUp {
     /// Vazgeç
     public static let cancel = L10n.tr("Localizable", "PopUp.cancel")
@@ -100,6 +119,29 @@ public enum L10n {
     public static func recipeCommnetAndLike(_ p1: Any, _ p2: Any) -> String {
       return L10n.tr("Localizable", "Recipe.recipeCommnetAndLike", String(describing: p1), String(describing: p2))
     }
+  }
+
+  public enum Register {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Register.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Register.emptyEmail")
+    /// Şifre alanı boş bırakılamaz.
+    public static let emptyPassword = L10n.tr("Localizable", "Register.emptyPassword")
+    /// Kullanıcı adı boş bırakılamaz.
+    public static let emptyUsername = L10n.tr("Localizable", "Register.emptyUsername")
+    /// Şifrenizi mi unuttunuz?
+    public static let forgotPassword = L10n.tr("Localizable", "Register.forgotPassword")
+    /// Hesabın mı var?
+    public static let haveAccount = L10n.tr("Localizable", "Register.haveAccount")
+    /// Şifre
+    public static let password = L10n.tr("Localizable", "Register.password")
+    /// Giriş Yap
+    public static let signIn = L10n.tr("Localizable", "Register.signIn")
+    /// Üye Ol
+    public static let title = L10n.tr("Localizable", "Register.title")
+    /// Kullanıcı Adı
+    public static let username = L10n.tr("Localizable", "Register.username")
   }
 
   public enum Toast {

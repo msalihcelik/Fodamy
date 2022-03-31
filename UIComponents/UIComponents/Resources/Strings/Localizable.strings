@@ -59,6 +59,28 @@
 "PopUp.login" = "Login";
 "PopUp.cancel" = "Vazgeç";
 
+// MARK: - Login
+"Login.title" = "Giriş Yap";
+"Login.email" = "E-mail Adresi";
+"Login.password" = "Şifre";
+"Login.haveNotAccount" = "Hesabın mı yok?";
+"Login.signUp" = "Üye Ol";
+"Login.forgotPassword" = "Şifrenizi mi unuttunuz?";
+"Login.emptyEmail" = "E-mail alanı boş bırakılamaz.";
+"Login.emptyPassword" = "Şifre alanı boş bırakılamaz.";
+
+// MARK: - Register
+"Register.title" = "Üye Ol";
+"Register.username" = "Kullanıcı Adı";
+"Register.email" = "E-mail Adresi";
+"Register.password" = "Şifre";
+"Register.haveAccount" = "Hesabın mı var?";
+"Register.signIn" = "Giriş Yap";
+"Register.emptyUsername" = "Kullanıcı adı boş bırakılamaz.";
+"Register.emptyEmail" = "E-mail alanı boş bırakılamaz.";
+"Register.emptyPassword" = "Şifre alanı boş bırakılamaz.";
+"Register.forgotPassword" = "Şifrenizi mi unuttunuz?";
+
 // MARK: - Forgot
 "Forgot.title" = "Şifre Sıfırlama";
 "Forgot.email" = "E-mail Adresi";

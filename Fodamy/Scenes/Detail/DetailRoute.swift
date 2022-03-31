@@ -15,7 +15,7 @@ extension DetailRoute where Self: RouterProtocol {
         let router = DetailRouter()
         let viewModel = DetailViewModel(recipeId: recipeId, router: router)
         let viewController = DetailViewController(viewModel: viewModel)
-        
+        viewController.hidesBottomBarWhenPushed = true
         let transition = PushTransition()
         router.viewController = viewController
         router.openTransition = transition
