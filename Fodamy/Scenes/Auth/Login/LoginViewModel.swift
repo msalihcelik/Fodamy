@@ -20,7 +20,7 @@ final class LoginViewModel: BaseViewModel<LoginRouter>, LoginViewProtocol {
     private let keychain = KeychainSwift()
     
     func pushPasswordResetScene() {
-        router.pushForgotPassword()
+//        router.pushForgotPassword()
     }
     
     func signInButtonTapped(email: String, password: String) {
