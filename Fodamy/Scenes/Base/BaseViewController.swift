@@ -78,6 +78,10 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController, BaseViewCo
         viewModel.showWarningToast = { text in
             ToastPresenter.showWarningToast(text: text)
         }
+        
+        viewModel.showSuccessToast = { text in
+            ToastPresenter.showSuccessToast(text: text)
+        }
     }
     
     func showWarningToast(message: String) {

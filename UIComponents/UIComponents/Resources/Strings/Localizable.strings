@@ -80,3 +80,15 @@
 "Register.emptyEmail" = "E-mail alanı boş bırakılamaz.";
 "Register.emptyPassword" = "Şifre alanı boş bırakılamaz.";
 "Register.forgotPassword" = "Şifrenizi mi unuttunuz?";
+
+// MARK: - Forgot
+"Forgot.title" = "Şifre Sıfırlama";
+"Forgot.email" = "E-mail Adresi";
+"Forgot.reset" = "Sıfırla";
+"Forgot.emptyEmail" = "E-mail alanı boş bırakılamaz.";
+"Forgot.success" = "Success";
+
+// MARK: - Validation
+"Validation.name" = "Lütfen geçerli bir ad girin.";
+"Validation.email" = "Lütfen geçerli bir E-mail adresi girin";
+"Validation.password" = "Şifre en az 6 karakterden oluşmalıdır.";

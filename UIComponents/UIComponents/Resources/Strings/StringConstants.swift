@@ -55,6 +55,19 @@ public enum L10n {
     }
   }
 
+  public enum Forgot {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Forgot.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Forgot.emptyEmail")
+    /// Sıfırla
+    public static let reset = L10n.tr("Localizable", "Forgot.reset")
+    /// Success
+    public static let success = L10n.tr("Localizable", "Forgot.success")
+    /// Şifre Sıfırlama
+    public static let title = L10n.tr("Localizable", "Forgot.title")
+  }
+
   public enum General {
     /// Geri
     public static let back = L10n.tr("Localizable", "General.back")
@@ -141,6 +154,15 @@ public enum L10n {
     public static let follow = L10n.tr("Localizable", "UserView.follow")
     /// Following
     public static let following = L10n.tr("Localizable", "UserView.following")
+  }
+
+  public enum Validation {
+    /// Lütfen geçerli bir E-mail adresi girin
+    public static let email = L10n.tr("Localizable", "Validation.email")
+    /// Lütfen geçerli bir ad girin.
+    public static let name = L10n.tr("Localizable", "Validation.name")
+    /// Şifre en az 6 karakterden oluşmalıdır.
+    public static let password = L10n.tr("Localizable", "Validation.password")
   }
 
   public enum WalkThrough {

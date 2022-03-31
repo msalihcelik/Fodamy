@@ -16,6 +16,10 @@
 		67203B5F27F56997001A0CBF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5B27F56997001A0CBF /* RegisterViewController.swift */; };
 		67203B6027F56997001A0CBF /* RegisterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5C27F56997001A0CBF /* RegisterRoute.swift */; };
 		67203B6127F56997001A0CBF /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5D27F56997001A0CBF /* RegisterRouter.swift */; };
+		67203B6B27F56D21001A0CBF /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B6727F56D21001A0CBF /* ForgotPasswordViewModel.swift */; };
+		67203B6C27F56D21001A0CBF /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B6827F56D21001A0CBF /* ForgotPasswordViewController.swift */; };
+		67203B6D27F56D21001A0CBF /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B6927F56D21001A0CBF /* ForgotPasswordRouter.swift */; };
+		67203B6E27F56D21001A0CBF /* ForgotPasswordRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B6A27F56D21001A0CBF /* ForgotPasswordRoute.swift */; };
 		67326B9B27EC4C4A008BCF71 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9827EC4C4A008BCF71 /* DetailRouter.swift */; };
 		67326B9C27EC4C4A008BCF71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9927EC4C4A008BCF71 /* DetailViewController.swift */; };
 		67326B9D27EC4C4A008BCF71 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9A27EC4C4A008BCF71 /* DetailViewModel.swift */; };
@@ -70,6 +74,7 @@
 		67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486B27D71C5D007359A9 /* HomeRouter.swift */; };
 		67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486D27D71C5D007359A9 /* BaseViewController.swift */; };
 		67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486E27D71C5D007359A9 /* BaseViewModel.swift */; };
+		67D55A3A27F5A00300B43C5F /* PopToRootRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */; };
 		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
 		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
 		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
@@ -122,6 +127,10 @@
 		67203B5B27F56997001A0CBF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67203B5C27F56997001A0CBF /* RegisterRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRoute.swift; sourceTree = "<group>"; };
 		67203B5D27F56997001A0CBF /* RegisterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		67203B6727F56D21001A0CBF /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		67203B6827F56D21001A0CBF /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		67203B6927F56D21001A0CBF /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
+		67203B6A27F56D21001A0CBF /* ForgotPasswordRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRoute.swift; sourceTree = "<group>"; };
 		67326B9827EC4C4A008BCF71 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		67326B9927EC4C4A008BCF71 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		67326B9A27EC4C4A008BCF71 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -178,6 +187,7 @@
 		67A0486B27D71C5D007359A9 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		67A0486D27D71C5D007359A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		67A0486E27D71C5D007359A9 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootRoute.swift; sourceTree = "<group>"; };
 		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +265,7 @@
 			children = (
 				67203B4A27F5643D001A0CBF /* Login */,
 				67203B5927F5698C001A0CBF /* Register */,
+				67203B6627F56CFD001A0CBF /* ForgotPassword */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -279,6 +290,17 @@
 				67203B5C27F56997001A0CBF /* RegisterRoute.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		67203B6627F56CFD001A0CBF /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				67203B6827F56D21001A0CBF /* ForgotPasswordViewController.swift */,
+				67203B6727F56D21001A0CBF /* ForgotPasswordViewModel.swift */,
+				67203B6A27F56D21001A0CBF /* ForgotPasswordRoute.swift */,
+				67203B6927F56D21001A0CBF /* ForgotPasswordRouter.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		67326B9727EC4888008BCF71 /* Detail */ = {
@@ -470,6 +492,7 @@
 		67A0485827D719DC007359A9 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -804,6 +827,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67203B4E27F564EB001A0CBF /* LoginViewModel.swift in Sources */,
+				67D55A3A27F5A00300B43C5F /* PopToRootRoute.swift in Sources */,
 				674CD42A27E1B7B200834AA2 /* FavoritesRouter.swift in Sources */,
 				674CD3D527DEC75100834AA2 /* RecipesViewModel.swift in Sources */,
 				67203B0727F5572F001A0CBF /* Validation.swift in Sources */,
@@ -811,6 +835,7 @@
 				67A0486F27D71C5D007359A9 /* HomeRoute.swift in Sources */,
 				67203B6127F56997001A0CBF /* RegisterRouter.swift in Sources */,
 				677BE9AA27D8A0890071F9AB /* WalkThroughRouter.swift in Sources */,
+				67203B6B27F56D21001A0CBF /* ForgotPasswordViewModel.swift in Sources */,
 				67326B9B27EC4C4A008BCF71 /* DetailRouter.swift in Sources */,
 				67A0487027D71C5D007359A9 /* HomeViewModel.swift in Sources */,
 				67A0485C27D719DC007359A9 /* ModalTransition.swift in Sources */,
@@ -831,6 +856,7 @@
 				677BE9AB27D8A0890071F9AB /* WalkThroughViewController.swift in Sources */,
 				674CD42B27E1B7B200834AA2 /* FavoritesViewController.swift in Sources */,
 				674CD42C27E1B7B200834AA2 /* FavoritesViewModel.swift in Sources */,
+				67203B6C27F56D21001A0CBF /* ForgotPasswordViewController.swift in Sources */,
 				67326BD327EF7948008BCF71 /* LoginPopUpGeneratorViewController.swift in Sources */,
 				677BE9C827DA262E0071F9AB /* MainNavigationController.swift in Sources */,
 				67326BD427EF7948008BCF71 /* LoginPopUpGeneratorViewModel.swift in Sources */,
@@ -847,12 +873,14 @@
 				67326B9C27EC4C4A008BCF71 /* DetailViewController.swift in Sources */,
 				67203B5F27F56997001A0CBF /* RegisterViewController.swift in Sources */,
 				67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */,
+				67203B6E27F56D21001A0CBF /* ForgotPasswordRoute.swift in Sources */,
 				6734641127E8E0CF00F4487B /* FavoritesRecipeCellModel+Extension.swift in Sources */,
 				6734640F27E8DE9400F4487B /* FavoritesCellModel+Extension.swift in Sources */,
 				67A0485F27D719DC007359A9 /* PushTransition.swift in Sources */,
 				67A0485927D719DC007359A9 /* AppRouter.swift in Sources */,
 				677BE9AE27D8A2340071F9AB /* WalkThroughRoute.swift in Sources */,
 				674CD3FC27DF85CA00834AA2 /* ApiRequestInterceptor.swift in Sources */,
+				67203B6D27F56D21001A0CBF /* ForgotPasswordRouter.swift in Sources */,
 				67A0487127D71C5D007359A9 /* HomeViewController.swift in Sources */,
 				67203B6027F56997001A0CBF /* RegisterRoute.swift in Sources */,
 			);

@@ -10,6 +10,7 @@
 		67203B0427F555AA001A0CBF /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B0327F555AA001A0CBF /* Auth.swift */; };
 		67203B5727F5689E001A0CBF /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5627F5689E001A0CBF /* RegisterRequest.swift */; };
 		67203B4927F56352001A0CBF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B4827F56352001A0CBF /* LoginRequest.swift */; };
+		67203B6427F56C72001A0CBF /* ForgotPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B6327F56C72001A0CBF /* ForgotPasswordRequest.swift */; };
 		67326BB727EDB1C1008BCF71 /* GetDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */; };
 		67326BBA27EDB22E008BCF71 /* GetDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */; };
 		67326BBC27EDB2E6008BCF71 /* TimeOfRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BBB27EDB2E6008BCF71 /* TimeOfRecipe.swift */; };
@@ -63,6 +64,7 @@
 		67203B0327F555AA001A0CBF /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		67203B4827F56352001A0CBF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		67203B5627F5689E001A0CBF /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		67203B6327F56C72001A0CBF /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordRequest.swift; path = DataProvider/Requests/ForgotPasswordRequest.swift; sourceTree = SOURCE_ROOT; };
 		67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailRequest.swift; sourceTree = "<group>"; };
 		67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailResponse.swift; sourceTree = "<group>"; };
 		67326BBB27EDB2E6008BCF71 /* TimeOfRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfRecipe.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				67203B4827F56352001A0CBF /* LoginRequest.swift */,
 				67203B5627F5689E001A0CBF /* RegisterRequest.swift */,
+				67203B6327F56C72001A0CBF /* ForgotPasswordRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				67A048A727D72749007359A9 /* DecodableResponseRequest.swift in Sources */,
 				67A048AF27D72749007359A9 /* ApiDecodableResponseRequest.swift in Sources */,
 				674CD42527E0783C00834AA2 /* GetCategoryRequest.swift in Sources */,
+				67203B6427F56C72001A0CBF /* ForgotPasswordRequest.swift in Sources */,
 				67326BC027EF5599008BCF71 /* GetCommentRequest.swift in Sources */,
 				674CD47727E4A66E00834AA2 /* RecipeCategories.swift in Sources */,
 				67326BBE27EDB3B7008BCF71 /* NumberOfPerson.swift in Sources */,
