@@ -22,8 +22,9 @@ final class ForgotPasswordViewModel: BaseViewModel<ForgotPasswordRouter>, Forgot
             guard let self = self else { return }
             self.hideLoading?()
             switch result {
-            case.success(_):
-                print(L10n.Forgot.success)
+            case.success:
+                self.showSuccessToast?(L10n.Forgot.success)
+                self.router.popToRoot()
             case.failure(let error):
                 self.showWarningToast?(error.localizedDescription)
             }

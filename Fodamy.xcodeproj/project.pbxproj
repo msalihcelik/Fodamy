@@ -66,6 +66,7 @@
 		67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486B27D71C5D007359A9 /* HomeRouter.swift */; };
 		67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486D27D71C5D007359A9 /* BaseViewController.swift */; };
 		67A0487427D71C5D007359A9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0486E27D71C5D007359A9 /* BaseViewModel.swift */; };
+		67D55A3A27F5A00300B43C5F /* PopToRootRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */; };
 		6EF38E401039794D44E3148B /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */; };
 		A052E475019E065E3F67DA96 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF3B3F48EB84BF50F82092 /* Pods_Fodamy.framework */; };
 		A421A753587982010ACB1861 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */; };
@@ -170,6 +171,7 @@
 		67A0486B27D71C5D007359A9 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		67A0486D27D71C5D007359A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		67A0486E27D71C5D007359A9 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootRoute.swift; sourceTree = "<group>"; };
 		6A1F15117986C717948B262F /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D6CF5C00D998C7DFA0A564 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B21074A0B33C216DAF6BA93A /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 		67A0485827D719DC007359A9 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				67D55A3927F5A00300B43C5F /* PopToRootRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D55A3A27F5A00300B43C5F /* PopToRootRoute.swift in Sources */,
 				674CD42A27E1B7B200834AA2 /* FavoritesRouter.swift in Sources */,
 				674CD3D527DEC75100834AA2 /* RecipesViewModel.swift in Sources */,
 				67203B0727F5572F001A0CBF /* Validation.swift in Sources */,

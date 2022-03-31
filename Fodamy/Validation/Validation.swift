@@ -12,7 +12,7 @@ class Validation {
         let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         
         guard emailPred.evaluate(with: email) else {
-            ToastPresenter.showWarningToast(text: "L10n.Validation.email")
+            ToastPresenter.showWarningToast(text: L10n.Validation.email)
             return false
         }
         return true
@@ -20,7 +20,7 @@ class Validation {
     
     func isValidPassword(_ password: String) -> Bool {
         guard password.count > 5 else {
-            ToastPresenter.showWarningToast(text: "L10n.Validation.password")
+            ToastPresenter.showWarningToast(text: L10n.Validation.password)
             return false
         }
         return true
@@ -30,7 +30,7 @@ class Validation {
         let regex = "[A-Za-z]{2,}"
         let test = NSPredicate(format: "SELF MATCHES %@", regex)
         guard test.evaluate(with: name) else {
-            ToastPresenter.showWarningToast(text: "L10n.Validation.name")
+            ToastPresenter.showWarningToast(text: L10n.Validation.name)
             return false
         }
         return true

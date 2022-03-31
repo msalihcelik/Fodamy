@@ -15,6 +15,7 @@ protocol BaseViewModelEventSource: AnyObject {
     var hideLoading: VoidClosure? { get set }
     
     var showWarningToast: StringClosure? { get set }
+    var showSuccessToast: StringClosure? { get set }
     
     var showRetryButton: VoidClosure? { get set }
     var hideRetryButton: VoidClosure? { get set }
@@ -34,7 +35,7 @@ class BaseViewModel<R: Router>: BaseViewModelProtocol {
     var showLoading: VoidClosure?
     var hideLoading: VoidClosure?
     var showWarningToast: StringClosure?
-    
+    var showSuccessToast: StringClosure?
     var showRetryButton: VoidClosure?
     var hideRetryButton: VoidClosure?
     
