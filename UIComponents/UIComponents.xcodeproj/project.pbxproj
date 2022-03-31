@@ -10,6 +10,7 @@
 		43AFEEF86F463F87DBE39C2A /* Pods_UIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072944FE2015860D892F1083 /* Pods_UIComponentsTests.framework */; };
 		67203ABA27F2E527001A0CBF /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203AB927F2E527001A0CBF /* RetryButton.swift */; };
 		67203AFD27F54892001A0CBF /* FloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */; };
+		67203B0027F553A1001A0CBF /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203AFF27F553A1001A0CBF /* AuthHeaderView.swift */; };
 		67326B9F27EC586C008BCF71 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326B9E27EC586C008BCF71 /* DetailHeaderView.swift */; };
 		67326BA627EC6E70008BCF71 /* DetailHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BA427EC6E70008BCF71 /* DetailHeaderViewCell.swift */; };
 		67326BA727EC6E70008BCF71 /* DetailHeaderViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BA527EC6E70008BCF71 /* DetailHeaderViewCellModel.swift */; };
@@ -101,6 +102,7 @@
 		52290B6F82F5CAA541DEC62C /* Pods-UIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-UIComponentsTests/Pods-UIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		67203AB927F2E527001A0CBF /* RetryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
 		67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelTextField.swift; sourceTree = "<group>"; };
+		67203AFF27F553A1001A0CBF /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		67326B9E27EC586C008BCF71 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		67326BA427EC6E70008BCF71 /* DetailHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderViewCell.swift; sourceTree = "<group>"; };
 		67326BA527EC6E70008BCF71 /* DetailHeaderViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderViewCellModel.swift; sourceTree = "<group>"; };
@@ -211,6 +213,14 @@
 				67203AFC27F54892001A0CBF /* FloatingLabelTextField.swift */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		67203AFE27F5537C001A0CBF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				67203AFF27F553A1001A0CBF /* AuthHeaderView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		67326BA027EC5AA5008BCF71 /* Detail */ = {
@@ -385,6 +395,7 @@
 		677BE9CE27DA63840071F9AB /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				67203AFE27F5537C001A0CBF /* Auth */,
 				67326BA027EC5AA5008BCF71 /* Detail */,
 				677BE9CF27DA63A50071F9AB /* AppTitleView.swift */,
 				674CD3DF27DF181200834AA2 /* UserView.swift */,
@@ -701,6 +712,7 @@
 				677BE9C027D9600D0071F9AB /* AppButton.swift in Sources */,
 				67A0480A27D717FA007359A9 /* UIComponents.docc in Sources */,
 				67326BA627EC6E70008BCF71 /* DetailHeaderViewCell.swift in Sources */,
+				67203B0027F553A1001A0CBF /* AuthHeaderView.swift in Sources */,
 				677BE9B327D8B58E0071F9AB /* WalkThroughCell.swift in Sources */,
 				67326BAB27EC8C83008BCF71 /* CountInfoView.swift in Sources */,
 				674CD41D27E0595700834AA2 /* SegmentioOptions+Extensions.swift in Sources */,
