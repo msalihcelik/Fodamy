@@ -89,6 +89,29 @@ public enum L10n {
     }
   }
 
+  public enum Register {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Register.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Register.emptyEmail")
+    /// Şifre alanı boş bırakılamaz.
+    public static let emptyPassword = L10n.tr("Localizable", "Register.emptyPassword")
+    /// Kullanıcı adı boş bırakılamaz.
+    public static let emptyUsername = L10n.tr("Localizable", "Register.emptyUsername")
+    /// Şifrenizi mi unuttunuz?
+    public static let forgotPassword = L10n.tr("Localizable", "Register.forgotPassword")
+    /// Hesabın mı var?
+    public static let haveAccount = L10n.tr("Localizable", "Register.haveAccount")
+    /// Şifre
+    public static let password = L10n.tr("Localizable", "Register.password")
+    /// Giriş Yap
+    public static let signIn = L10n.tr("Localizable", "Register.signIn")
+    /// Üye Ol
+    public static let title = L10n.tr("Localizable", "Register.title")
+    /// Kullanıcı Adı
+    public static let username = L10n.tr("Localizable", "Register.username")
+  }
+
   public enum Toast {
     /// Lütfen ekranı yukarıdan aşağıya kaydırarak yenileyiniz.
     public static let recipeRequestError = L10n.tr("Localizable", "Toast.recipeRequestError")
