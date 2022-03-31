@@ -170,6 +170,5 @@ extension RegisterViewController {
         guard validation.isValidPassword(password) else { return }
         guard validation.isValidEmail(email) else { return }
         viewModel.signUpButtonTapped(username: username, email: email, password: password)
-        
     }
 }
