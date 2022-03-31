@@ -20,7 +20,7 @@ final class RegisterViewModel: BaseViewModel<RegisterRouter>, RegisterViewProtoc
     private let keychain = KeychainSwift()
     
     func pushPasswordResetScene() {
-        router.pushForgotPassword()
+//        router.pushForgotPassword()
     }
     
     func pushSignIn() {

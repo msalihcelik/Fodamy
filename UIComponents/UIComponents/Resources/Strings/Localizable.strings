@@ -59,6 +59,16 @@
 "PopUp.login" = "Login";
 "PopUp.cancel" = "Vazgeç";
 
+// MARK: - Login
+"Login.title" = "Giriş Yap";
+"Login.email" = "E-mail Adresi";
+"Login.password" = "Şifre";
+"Login.haveNotAccount" = "Hesabın mı yok?";
+"Login.signUp" = "Üye Ol";
+"Login.forgotPassword" = "Şifrenizi mi unuttunuz?";
+"Login.emptyEmail" = "E-mail alanı boş bırakılamaz.";
+"Login.emptyPassword" = "Şifre alanı boş bırakılamaz.";
+
 // MARK: - Register
 "Register.title" = "Üye Ol";
 "Register.username" = "Kullanıcı Adı";

@@ -69,6 +69,25 @@ public enum L10n {
     public static let lastAdded = L10n.tr("Localizable", "Home.lastAdded")
   }
 
+  public enum Login {
+    /// E-mail Adresi
+    public static let email = L10n.tr("Localizable", "Login.email")
+    /// E-mail alanı boş bırakılamaz.
+    public static let emptyEmail = L10n.tr("Localizable", "Login.emptyEmail")
+    /// Şifre alanı boş bırakılamaz.
+    public static let emptyPassword = L10n.tr("Localizable", "Login.emptyPassword")
+    /// Şifrenizi mi unuttunuz?
+    public static let forgotPassword = L10n.tr("Localizable", "Login.forgotPassword")
+    /// Hesabın mı yok?
+    public static let haveNotAccount = L10n.tr("Localizable", "Login.haveNotAccount")
+    /// Şifre
+    public static let password = L10n.tr("Localizable", "Login.password")
+    /// Üye Ol
+    public static let signUp = L10n.tr("Localizable", "Login.signUp")
+    /// Giriş Yap
+    public static let title = L10n.tr("Localizable", "Login.title")
+  }
+
   public enum PopUp {
     /// Vazgeç
     public static let cancel = L10n.tr("Localizable", "PopUp.cancel")

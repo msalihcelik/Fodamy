@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		67203B0727F5572F001A0CBF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B0627F5572F001A0CBF /* Validation.swift */; };
+		67203B4C27F56447001A0CBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B4B27F56447001A0CBF /* LoginViewController.swift */; };
+		67203B4E27F564EB001A0CBF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B4D27F564EB001A0CBF /* LoginViewModel.swift */; };
+		67203B5027F56620001A0CBF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B4F27F56620001A0CBF /* LoginRouter.swift */; };
+		67203B5227F56679001A0CBF /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5127F56679001A0CBF /* LoginRoute.swift */; };
 		67203B5E27F56997001A0CBF /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5A27F56997001A0CBF /* RegisterViewModel.swift */; };
 		67203B5F27F56997001A0CBF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5B27F56997001A0CBF /* RegisterViewController.swift */; };
 		67203B6027F56997001A0CBF /* RegisterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5C27F56997001A0CBF /* RegisterRoute.swift */; };
@@ -110,6 +114,10 @@
 		1A29EB337C19961B3FB4DC6B /* Pods_FodamyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FodamyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ADB0A2AE85B6B385AD0A49 /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67203B0627F5572F001A0CBF /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		67203B4B27F56447001A0CBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		67203B4D27F564EB001A0CBF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		67203B4F27F56620001A0CBF /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		67203B5127F56679001A0CBF /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
 		67203B5A27F56997001A0CBF /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		67203B5B27F56997001A0CBF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67203B5C27F56997001A0CBF /* RegisterRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRoute.swift; sourceTree = "<group>"; };
@@ -245,9 +253,21 @@
 		67203B5827F56979001A0CBF /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				67203B4A27F5643D001A0CBF /* Login */,
 				67203B5927F5698C001A0CBF /* Register */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		67203B4A27F5643D001A0CBF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				67203B4B27F56447001A0CBF /* LoginViewController.swift */,
+				67203B4D27F564EB001A0CBF /* LoginViewModel.swift */,
+				67203B4F27F56620001A0CBF /* LoginRouter.swift */,
+				67203B5127F56679001A0CBF /* LoginRoute.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		67203B5927F5698C001A0CBF /* Register */ = {
@@ -783,6 +803,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67203B4E27F564EB001A0CBF /* LoginViewModel.swift in Sources */,
 				674CD42A27E1B7B200834AA2 /* FavoritesRouter.swift in Sources */,
 				674CD3D527DEC75100834AA2 /* RecipesViewModel.swift in Sources */,
 				67203B0727F5572F001A0CBF /* Validation.swift in Sources */,
@@ -798,11 +819,13 @@
 				67A0485D27D719DC007359A9 /* PlaceOnWindowTransition.swift in Sources */,
 				67A0485A27D719DC007359A9 /* Animator.swift in Sources */,
 				67326BA227EC62E9008BCF71 /* DetailRoute.swift in Sources */,
+				67203B5027F56620001A0CBF /* LoginRouter.swift in Sources */,
 				67A0487327D71C5D007359A9 /* BaseViewController.swift in Sources */,
 				674CD3FE27DF85E300834AA2 /* DataProvider.swift in Sources */,
 				67203B5E27F56997001A0CBF /* RegisterViewModel.swift in Sources */,
 				67A0487227D71C5D007359A9 /* HomeRouter.swift in Sources */,
 				674CD3D727DEC78000834AA2 /* RecipesRoute.swift in Sources */,
+				67203B4C27F56447001A0CBF /* LoginViewController.swift in Sources */,
 				67A0485B27D719DC007359A9 /* Router.swift in Sources */,
 				67326BD627EF7A1D008BCF71 /* LoginPopUpGeneratorRoute.swift in Sources */,
 				677BE9AB27D8A0890071F9AB /* WalkThroughViewController.swift in Sources */,
@@ -817,6 +840,7 @@
 				674CD3FA27DF85AC00834AA2 /* ApiLogger.swift in Sources */,
 				67A047A727D713E1007359A9 /* AppDelegate.swift in Sources */,
 				67A0485E27D719DC007359A9 /* Transition.swift in Sources */,
+				67203B5227F56679001A0CBF /* LoginRoute.swift in Sources */,
 				67326B9D27EC4C4A008BCF71 /* DetailViewModel.swift in Sources */,
 				677BE9CD27DA3DE80071F9AB /* MainTabBarRoute.swift in Sources */,
 				677BE9C627DA239A0071F9AB /* MainTabBarController.swift in Sources */,

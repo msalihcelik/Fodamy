@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		67203B0427F555AA001A0CBF /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B0327F555AA001A0CBF /* Auth.swift */; };
 		67203B5727F5689E001A0CBF /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B5627F5689E001A0CBF /* RegisterRequest.swift */; };
+		67203B4927F56352001A0CBF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67203B4827F56352001A0CBF /* LoginRequest.swift */; };
 		67326BB727EDB1C1008BCF71 /* GetDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */; };
 		67326BBA27EDB22E008BCF71 /* GetDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */; };
 		67326BBC27EDB2E6008BCF71 /* TimeOfRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326BBB27EDB2E6008BCF71 /* TimeOfRecipe.swift */; };
@@ -60,6 +61,7 @@
 		051E11E6484FA701EAF089B2 /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		27EE6CB5C2BB335FA991E76A /* Pods-DataProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		67203B0327F555AA001A0CBF /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		67203B4827F56352001A0CBF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		67203B5627F5689E001A0CBF /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		67326BB627EDB1C1008BCF71 /* GetDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailRequest.swift; sourceTree = "<group>"; };
 		67326BB927EDB22E008BCF71 /* GetDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetailResponse.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		67203B5527F56874001A0CBF /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				67203B4827F56352001A0CBF /* LoginRequest.swift */,
 				67203B5627F5689E001A0CBF /* RegisterRequest.swift */,
 			);
 			path = Auth;
@@ -448,6 +451,7 @@
 				67A047E627D717AB007359A9 /* DataProvider.docc in Sources */,
 				674CD41527DF8D8400834AA2 /* BaseResponse.swift in Sources */,
 				674CD40C27DF89AE00834AA2 /* Image.swift in Sources */,
+				67203B4927F56352001A0CBF /* LoginRequest.swift in Sources */,
 				67326BB727EDB1C1008BCF71 /* GetDetailRequest.swift in Sources */,
 				67326BBC27EDB2E6008BCF71 /* TimeOfRecipe.swift in Sources */,
 				67A048AA27D72749007359A9 /* RequestMethod.swift in Sources */,
