@@ -15,11 +15,12 @@ extension LoginRoute where Self: RouterProtocol {
         let router = LoginRouter()
         let viewModel = LoginViewModel(router: router)
         let viewController = LoginViewController(viewModel: viewModel)
-        
+        let navigationController = AuthNavigationController(rootViewController: viewController)
         let transition = ModalTransition()
+        
         router.viewController = viewController
         router.openTransition = transition
         
-        open(viewController, transition: transition)
+        open(navigationController, transition: transition)
     }
 }
