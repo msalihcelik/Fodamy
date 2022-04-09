@@ -47,6 +47,11 @@ final class RegisterViewController: BaseViewController<RegisterViewModel> {
         configureContents()
         setLocalize()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.topItem?.backButtonTitle = L10n.General.back
+    }
 }
 
 // MARK: - UILayout

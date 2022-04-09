@@ -49,6 +49,17 @@ final class LoginViewController: BaseViewController<LoginViewModel> {
         configureContents()
         setLocalize()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let closeImage = UIImage.icClose
+            .resize(to: .init(width: 18, height: 18))
+            .withRenderingMode(.alwaysTemplate)
+        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(image: closeImage,
+                                                                                         style: .done,
+                                                                                         target: self,
+                                                                                         action: #selector(closeButtonTapped))
+    }
 }
 
 // MARK: - UILayout
@@ -169,5 +180,10 @@ extension LoginViewController {
         guard validation.isValidPassword(password) else { return }
         guard validation.isValidEmail(email) else { return }
         viewModel.signInButtonTapped(email: email, password: password)
+    }
+    
+    @objc
+    private func closeButtonTapped() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

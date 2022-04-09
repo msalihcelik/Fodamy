@@ -68,6 +68,7 @@
 		67A0489327D7224D007359A9 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */; };
 		67A0489527D72360007359A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A0489427D72360007359A9 /* Localizable.strings */; };
 		67A0489727D72375007359A9 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0489627D72375007359A9 /* StringConstants.swift */; };
+		67D55A3F27F7062C00B43C5F /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D55A3E27F7062C00B43C5F /* AuthNavigationController.swift */; };
 		DE7B79E9A7537607DC308D06 /* Pods_UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DC9D020801C6CDDF222072 /* Pods_UIComponents.framework */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +163,7 @@
 		67A0488F27D7224D007359A9 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		67A0489427D72360007359A9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		67A0489627D72375007359A9 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		67D55A3E27F7062C00B43C5F /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
 		B8B3914E663AD727096E770F /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -430,6 +432,7 @@
 		67A0480727D717FA007359A9 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				67D55A3D27F705F300B43C5F /* UINavigationController */,
 				67326BF027F18201008BCF71 /* UICollectionView */,
 				67203AFB27F547AB001A0CBF /* UITextField */,
 				677BE9BE27D95FF80071F9AB /* UIButton */,
@@ -499,6 +502,14 @@
 				67A0488D27D7224D007359A9 /* UIFont+Extensions.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		67D55A3D27F705F300B43C5F /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				67D55A3E27F7062C00B43C5F /* AuthNavigationController.swift */,
+			);
+			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -700,6 +711,7 @@
 				67A0488627D72228007359A9 /* UIImage+Icons.swift in Sources */,
 				674CD3E027DF181200834AA2 /* UserView.swift in Sources */,
 				67A0488A27D72228007359A9 /* UIImage+Images.swift in Sources */,
+				67D55A3F27F7062C00B43C5F /* AuthNavigationController.swift in Sources */,
 				674CD3DB27DEC7D700834AA2 /* RecipeCell.swift in Sources */,
 				67326BAD27EC9BDD008BCF71 /* FollowButton.swift in Sources */,
 				677BE9B427D8B58E0071F9AB /* WalkThroughCellModel.swift in Sources */,
